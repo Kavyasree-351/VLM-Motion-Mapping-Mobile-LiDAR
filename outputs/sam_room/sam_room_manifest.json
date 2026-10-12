@@ -1,0 +1,20 @@
+{
+  "proposals": 243,
+  "sam_masks": 243,
+  "accepted_refinements": 186,
+  "fallbacks": 57,
+  "objects": 9,
+  "classes": [
+    "air vent",
+    "armchair",
+    "beanbag",
+    "door",
+    "picture",
+    "sofa",
+    "storage table",
+    "window",
+    "window"
+  ],
+  "geometry": "Existing measured mesh and room alignment; object masks refined only",
+  "limitations": "Geometry gates are consistency proxies, not annotated mask accuracy. Same-room visual references and inferred depth scale remain."
+}

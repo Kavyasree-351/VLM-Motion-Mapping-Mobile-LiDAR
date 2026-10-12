@@ -1,0 +1,9 @@
+{
+  "unknown_cells": 9194,
+  "free_cells": 6406,
+  "occupied_cells": 642,
+  "ambiguous_cells": 657,
+  "ray_frames": 73,
+  "resolution_pose_units": 0.04,
+  "note": "Exploratory ray evidence with inferred calibration; not a validated navigation costmap. Unknown is preserved, no hole filling."
+}

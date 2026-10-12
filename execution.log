@@ -1,0 +1,164 @@
+C:\Users\yuvar\AppData\Roaming\Python\Python313\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+START cell -1
+END cell -1 OK
+START cell 0
+END cell 0 OK
+START cell 1
+END cell 1 OK
+START cell 2
+END cell 2 OK
+START cell 3
+END cell 3 OK
+START cell 4
+END cell 4 OK
+START cell 5
+START cell 6
+END cell 6 OK
+START cell 7
+END cell 7 OK
+START cell 8
+END cell 8 OK
+START cell 9
+END cell 9 OK
+START cell 10
+END cell 10 OK
+START cell 11
+END cell 11 OK
+START cell 12
+END cell 12 OK
+START cell 13
+END cell 13 OK
+START cell 14
+END cell 14 OK
+START cell 15
+END cell 15 OK
+START cell 16
+END cell 16 OK
+START cell 17
+END cell 17 OK
+START cell 18
+END cell 18 OK
+START cell 19
+END cell 19 OK
+START cell 20
+END cell 20 OK
+START cell 21
+END cell 21 OK
+START cell 22
+END cell 22 OK
+START cell 23
+END cell 23 OK
+START cell 24
+END cell 24 OK
+START cell 25
+END cell 25 OK
+START cell 26
+END cell 26 OK
+START cell 27
+END cell 27 OK
+START cell 28
+END cell 28 ERROR TypeError: print() got an unexpected keyword argument 'window_name'
+START cell 29
+END cell 29 OK
+START cell 30
+END cell 30 OK
+START cell 31
+END cell 31 OK
+START cell 32
+END cell 32 OK
+START cell 33
+END cell 33 OK
+START cell 34
+END cell 34 OK
+START cell 35
+END cell 35 OK
+START cell 36
+END cell 36 OK
+START cell 37
+END cell 37 OK
+START cell 38
+END cell 38 OK
+START cell 39
+END cell 39 OK
+START cell 40
+END cell 40 OK
+START cell 41
+END cell 41 OK
+START cell 42
+END cell 42 OK
+START cell 43
+END cell 43 OK
+START cell 44
+END cell 44 OK
+START cell 45
+END cell 45 OK
+START cell 46
+END cell 46 OK
+START cell 47
+END cell 47 ERROR AttributeError: 'numpy.ndarray' object has no attribute 'ptp'
+START cell 48
+END cell 48 OK
+START cell 49
+END cell 49 OK
+START cell 50
+END cell 50 OK
+START cell 51
+END cell 51 OK
+START cell 52
+END cell 52 OK
+START cell 53
+END cell 53 OK
+START cell 54
+END cell 54 OK
+START cell 55
+END cell 55 OK
+START cell 56
+END cell 56 OK
+START cell 57
+END cell 57 OK
+START cell 58
+END cell 58 OK
+START cell 59
+END cell 59 OK
+START cell 60
+END cell 60 OK
+START cell 61
+END cell 61 OK
+START cell 62
+END cell 62 OK
+START cell 63
+END cell 63 OK
+START cell 64
+END cell 64 OK
+START cell 65
+END cell 65 OK
+START cell 66
+END cell 66 OK
+START cell 67
+END cell 67 OK
+START cell 68
+END cell 68 OK
+START cell 69
+END cell 69 OK
+START cell 70
+END cell 70 OK
+START cell 71
+END cell 71 OK
+START cell 72
+END cell 72 OK
+START cell 73
+END cell 73 OK
+START cell 74
+END cell 74 OK
+START cell 75
+END cell 75 OK
+START cell 76
+END cell 76 OK
+START cell 77
+END cell 77 OK
+START cell 78
+END cell 78 OK
+START cell 79
+END cell 79 OK
+COMPLETE; errors: 2

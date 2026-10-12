@@ -1,0 +1,249 @@
+{
+  "camera_candidates": [
+    {
+      "mode": "c2w_opengl",
+      "focal_half_resolution": 350.0,
+      "median_epipolar_px": 0.3310302935616077,
+      "positive_depth_fraction": 0.9658658420551856,
+      "samples": 8408,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "c2w_opengl",
+      "focal_half_resolution": 375.0,
+      "median_epipolar_px": 0.9054479090386699,
+      "positive_depth_fraction": 0.8790437678401523,
+      "samples": 8408,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "c2w_opengl",
+      "focal_half_resolution": 300.0,
+      "median_epipolar_px": 1.1855556049963987,
+      "positive_depth_fraction": 0.8903425309229306,
+      "samples": 8408,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "c2w_opengl",
+      "focal_half_resolution": 400.0,
+      "median_epipolar_px": 1.471307224052583,
+      "positive_depth_fraction": 0.7615366317792579,
+      "samples": 8408,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "c2w_opengl",
+      "focal_half_resolution": 250.0,
+      "median_epipolar_px": 2.629660422873706,
+      "positive_depth_fraction": 0.7799714557564225,
+      "samples": 8408,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "c2w_opengl",
+      "focal_half_resolution": 450.0,
+      "median_epipolar_px": 2.556047024471328,
+      "positive_depth_fraction": 0.6933872502378687,
+      "samples": 8408,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "c2w_opengl",
+      "focal_half_resolution": 500.0,
+      "median_epipolar_px": 3.6199559520346125,
+      "positive_depth_fraction": 0.6585394862036156,
+      "samples": 8408,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "w2c_opencv",
+      "focal_half_resolution": 300.0,
+      "median_epipolar_px": 5.173951587531126,
+      "positive_depth_fraction": 0.547952471886272,
+      "samples": 9426,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "w2c_opencv",
+      "focal_half_resolution": 350.0,
+      "median_epipolar_px": 5.182977352090002,
+      "positive_depth_fraction": 0.522384892849565,
+      "samples": 9426,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "w2c_opencv",
+      "focal_half_resolution": 250.0,
+      "median_epipolar_px": 5.432845103208972,
+      "positive_depth_fraction": 0.5779758115849777,
+      "samples": 9426,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "w2c_opencv",
+      "focal_half_resolution": 375.0,
+      "median_epipolar_px": 5.400765116144552,
+      "positive_depth_fraction": 0.5,
+      "samples": 9426,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "w2c_opencv",
+      "focal_half_resolution": 400.0,
+      "median_epipolar_px": 5.698600461386289,
+      "positive_depth_fraction": 0.49893910460428603,
+      "samples": 9426,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "w2c_opencv",
+      "focal_half_resolution": 450.0,
+      "median_epipolar_px": 6.350046127973946,
+      "positive_depth_fraction": 0.5240823254827074,
+      "samples": 9426,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "w2c_opencv",
+      "focal_half_resolution": 500.0,
+      "median_epipolar_px": 7.397965311181217,
+      "positive_depth_fraction": 0.5251432208784214,
+      "samples": 9426,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "w2c_opengl",
+      "focal_half_resolution": 300.0,
+      "median_epipolar_px": 15.67946431639839,
+      "positive_depth_fraction": 0.40441332484617015,
+      "samples": 9426,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "w2c_opengl",
+      "focal_half_resolution": 375.0,
+      "median_epipolar_px": 15.724826144626764,
+      "positive_depth_fraction": 0.41035433906216845,
+      "samples": 9426,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "w2c_opengl",
+      "focal_half_resolution": 400.0,
+      "median_epipolar_px": 15.732762060717022,
+      "positive_depth_fraction": 0.41183959261616804,
+      "samples": 9426,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "w2c_opengl",
+      "focal_half_resolution": 350.0,
+      "median_epipolar_px": 15.760573054212415,
+      "positive_depth_fraction": 0.4085508168894547,
+      "samples": 9426,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "w2c_opengl",
+      "focal_half_resolution": 450.0,
+      "median_epipolar_px": 15.841847290452085,
+      "positive_depth_fraction": 0.4183110545300233,
+      "samples": 9426,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "w2c_opengl",
+      "focal_half_resolution": 500.0,
+      "median_epipolar_px": 15.969170402132285,
+      "positive_depth_fraction": 0.425419053681307,
+      "samples": 9426,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "w2c_opengl",
+      "focal_half_resolution": 250.0,
+      "median_epipolar_px": 15.982694925147234,
+      "positive_depth_fraction": 0.4037767876087418,
+      "samples": 9426,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "c2w_opencv",
+      "focal_half_resolution": 300.0,
+      "median_epipolar_px": 16.1983139369597,
+      "positive_depth_fraction": 0.36370123691722167,
+      "samples": 8408,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "c2w_opencv",
+      "focal_half_resolution": 250.0,
+      "median_epipolar_px": 16.19798871449207,
+      "positive_depth_fraction": 0.35799238820171264,
+      "samples": 8408,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "c2w_opencv",
+      "focal_half_resolution": 350.0,
+      "median_epipolar_px": 16.425148554326697,
+      "positive_depth_fraction": 0.3653663177925785,
+      "samples": 8408,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "c2w_opencv",
+      "focal_half_resolution": 375.0,
+      "median_epipolar_px": 16.682599460394115,
+      "positive_depth_fraction": 0.36762607040913414,
+      "samples": 8408,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "c2w_opencv",
+      "focal_half_resolution": 400.0,
+      "median_epipolar_px": 16.761673371136,
+      "positive_depth_fraction": 0.3713130352045671,
+      "samples": 8408,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "c2w_opencv",
+      "focal_half_resolution": 450.0,
+      "median_epipolar_px": 16.976330541812686,
+      "positive_depth_fraction": 0.37369172216936253,
+      "samples": 8408,
+      "split": "training anchors only"
+    },
+    {
+      "mode": "c2w_opencv",
+      "focal_half_resolution": 500.0,
+      "median_epipolar_px": 17.01015768327907,
+      "positive_depth_fraction": 0.37690294957183634,
+      "samples": 8408,
+      "split": "training anchors only"
+    }
+  ],
+  "selected_mode": "c2w_opengl",
+  "refined_K_half_resolution": [
+    [
+      343.7862369829403,
+      0.0,
+      180.0
+    ],
+    [
+      0.0,
+      343.7862369829403,
+      239.46
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "triangulated_samples": 10518,
+  "pose_units": "unknown; geometric depths share pose translation units",
+  "selection_protocol": "camera convention and focal selected using training anchors; every fifth 40-frame anchor reserved"
+}

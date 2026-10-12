@@ -1,0 +1,242 @@
+[
+  {
+    "query": "a turquoise wall",
+    "status": "unverified_ranked_patches",
+    "matches": [
+      {
+        "frame": 1050,
+        "pixel_box": [
+          0,
+          0,
+          280,
+          280
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.3361252546310425
+      },
+      {
+        "frame": 1500,
+        "pixel_box": [
+          0,
+          680,
+          280,
+          960
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.3291053771972656
+      },
+      {
+        "frame": 1500,
+        "pixel_box": [
+          200,
+          440,
+          520,
+          760
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.32286450266838074
+      }
+    ],
+    "caveat": "Cosine rank does not establish object presence; refrigerator query must not be interpreted as a detected refrigerator."
+  },
+  {
+    "query": "a white ceiling",
+    "status": "unverified_ranked_patches",
+    "matches": [
+      {
+        "frame": 450,
+        "pixel_box": [
+          440,
+          0,
+          720,
+          280
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.3333439528942108
+      },
+      {
+        "frame": 450,
+        "pixel_box": [
+          0,
+          0,
+          280,
+          280
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.3260585069656372
+      },
+      {
+        "frame": 450,
+        "pixel_box": [
+          200,
+          0,
+          520,
+          280
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.32562845945358276
+      }
+    ],
+    "caveat": "Cosine rank does not establish object presence; refrigerator query must not be interpreted as a detected refrigerator."
+  },
+  {
+    "query": "a wooden floor",
+    "status": "unverified_ranked_patches",
+    "matches": [
+      {
+        "frame": 450,
+        "pixel_box": [
+          440,
+          680,
+          720,
+          960
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.2812071144580841
+      },
+      {
+        "frame": 750,
+        "pixel_box": [
+          200,
+          680,
+          520,
+          960
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.2703171968460083
+      },
+      {
+        "frame": 2000,
+        "pixel_box": [
+          440,
+          680,
+          720,
+          960
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.26658210158348083
+      }
+    ],
+    "caveat": "Cosine rank does not establish object presence; refrigerator query must not be interpreted as a detected refrigerator."
+  },
+  {
+    "query": "an orange beanbag",
+    "status": "unverified_ranked_patches",
+    "matches": [
+      {
+        "frame": 450,
+        "pixel_box": [
+          0,
+          680,
+          280,
+          960
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.3583114445209503
+      },
+      {
+        "frame": 450,
+        "pixel_box": [
+          200,
+          680,
+          520,
+          960
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.3385641574859619
+      },
+      {
+        "frame": 450,
+        "pixel_box": [
+          0,
+          440,
+          280,
+          760
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.3042129576206207
+      }
+    ],
+    "caveat": "Cosine rank does not establish object presence; refrigerator query must not be interpreted as a detected refrigerator."
+  },
+  {
+    "query": "a glass window",
+    "status": "unverified_ranked_patches",
+    "matches": [
+      {
+        "frame": 1500,
+        "pixel_box": [
+          0,
+          0,
+          280,
+          280
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.30579328536987305
+      },
+      {
+        "frame": 1500,
+        "pixel_box": [
+          0,
+          440,
+          280,
+          760
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.29691022634506226
+      },
+      {
+        "frame": 1500,
+        "pixel_box": [
+          0,
+          200,
+          280,
+          520
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.2950446605682373
+      }
+    ],
+    "caveat": "Cosine rank does not establish object presence; refrigerator query must not be interpreted as a detected refrigerator."
+  },
+  {
+    "query": "a refrigerator",
+    "status": "unverified_ranked_patches",
+    "matches": [
+      {
+        "frame": 1720,
+        "pixel_box": [
+          200,
+          680,
+          520,
+          960
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.27516502141952515
+      },
+      {
+        "frame": 1050,
+        "pixel_box": [
+          0,
+          0,
+          280,
+          280
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.2736355662345886
+      },
+      {
+        "frame": 2000,
+        "pixel_box": [
+          0,
+          680,
+          280,
+          960
+        ],
+        "type": "image_patch_not_object",
+        "cosine": 0.2715749144554138
+      }
+    ],
+    "caveat": "Cosine rank does not establish object presence; refrigerator query must not be interpreted as a detected refrigerator."
+  }
+]

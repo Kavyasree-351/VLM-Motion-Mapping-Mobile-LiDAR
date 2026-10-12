@@ -1,0 +1,13 @@
+class_name          region  valid_pixels    score  fraction_flagged  ego_refinement_supported
+   beanbag             box          2587 0.541639          0.000000                      True
+      sofa             box           804 0.875534          0.000000                      True
+   beanbag sam3_refinement          2932 0.505034          0.000000                      True
+      sofa sam3_refinement           944 0.894012          0.007415                      True
+   beanbag  sam31_tracking          2920 0.503244          0.000000                      True
+      sofa  sam31_tracking           953 0.896545          0.007345                      True
+   beanbag             box          2492 0.293490          0.000000                      True
+      sofa             box          1646 0.530134          0.000000                      True
+   beanbag sam3_refinement          2632 0.256063          0.000000                      True
+      sofa sam3_refinement          2409 0.430097          0.000000                      True
+   beanbag  sam31_tracking          2661 0.252521          0.000000                      True
+      sofa  sam31_tracking          2788 0.425453          0.000000                      True

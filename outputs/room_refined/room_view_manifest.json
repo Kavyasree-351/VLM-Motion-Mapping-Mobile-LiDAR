@@ -1,0 +1,19 @@
+{
+  "objects": 9,
+  "classes": [
+    "air vent",
+    "armchair",
+    "beanbag",
+    "door",
+    "picture",
+    "sofa",
+    "storage table",
+    "window",
+    "window"
+  ],
+  "selected_frames": 107,
+  "total_runtime_seconds": 11.526729800000112,
+  "detector": "YOLOE-26l instance segmentation with disjoint visual reference frames",
+  "localization": "Depth-mask pixels, two-view voxel support, CLIP semantic review, registered-cloud support",
+  "limitations": "Offline reconstruction; inferred calibration/scale; partial object surfaces; no annotated detection/shape benchmark. Structural envelope is inferred."
+}

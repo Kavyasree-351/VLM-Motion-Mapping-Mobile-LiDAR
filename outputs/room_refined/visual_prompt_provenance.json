@@ -1,0 +1,75 @@
+{
+  "base_model": "yoloe-26l-seg.pt",
+  "classes": [
+    "sofa",
+    "armchair",
+    "beanbag",
+    "storage table",
+    "shelf",
+    "door",
+    "window",
+    "picture",
+    "air vent",
+    "ceiling light",
+    "person"
+  ],
+  "reference_boxes": {
+    "armchair": {
+      "frame": 1600,
+      "box": [
+        260,
+        480,
+        580,
+        950
+      ]
+    },
+    "beanbag": {
+      "frame": 400,
+      "box": [
+        120,
+        580,
+        512,
+        890
+      ]
+    },
+    "storage table": {
+      "frame": 1000,
+      "box": [
+        95,
+        590,
+        400,
+        940
+      ]
+    },
+    "door": {
+      "frame": 50,
+      "box": [
+        320,
+        140,
+        670,
+        950
+      ]
+    },
+    "window": {
+      "frame": 1600,
+      "box": [
+        0,
+        0,
+        390,
+        560
+      ]
+    },
+    "picture": {
+      "frame": 1000,
+      "box": [
+        410,
+        175,
+        520,
+        360
+      ]
+    }
+  },
+  "audit_frames_disjoint": true,
+  "training": "no gradient training; visual embedding conditioning on inspected room reference boxes",
+  "claim": "scene-specific adaptation, not zero-shot or cross-scene benchmark"
+}

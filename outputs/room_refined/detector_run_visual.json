@@ -1,0 +1,25 @@
+{
+  "model": "yoloe-26l-seg.pt",
+  "prompted_model": "yoloe-26l-room-visual-seg.pt",
+  "prompts": [
+    "sofa",
+    "armchair",
+    "beanbag",
+    "storage table",
+    "shelf",
+    "door",
+    "window",
+    "picture",
+    "air vent",
+    "ceiling light",
+    "person"
+  ],
+  "frames": 107,
+  "observations": 243,
+  "image_size": 960,
+  "confidence_threshold": 0.18,
+  "mask_boundary_erosion_depth_pixels": 1,
+  "runtime_seconds": 95.00887450000027,
+  "device": "cpu",
+  "label_status": "model hypotheses; scene-specific visual reference adaptation; require multi-view support and semantic review"
+}

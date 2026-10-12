@@ -1,0 +1,21 @@
+{
+  "type": "qualitative_relative_depth_map",
+  "depth_representation": "8-bit-like relative depth; not metric",
+  "pose_format": "tx ty tz qx qy qz qw",
+  "pose_assumption": "camera-to-world",
+  "rgb_frames": 2091,
+  "depth_frames": 2091,
+  "frame_step": 5,
+  "pseudo_near": 0.5,
+  "pseudo_far": 2.5,
+  "map_resolution": 0.02,
+  "map_margin": 3.0,
+  "topdown_axes": "world X-Z",
+  "vertical_axis": "world Y",
+  "provisional_intrinsics": {
+    "fx": 200.0,
+    "fy": 200.0,
+    "cx": 96.0,
+    "cy": 127.712
+  }
+}

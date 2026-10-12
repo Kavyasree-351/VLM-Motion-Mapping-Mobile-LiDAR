@@ -1,0 +1,38 @@
+{
+  "checked_on": "2026-10-08",
+  "sources": "primary arXiv abstracts and full-text versions",
+  "papers": [
+    {
+      "title": "Vision-Language-Motion Maps",
+      "arxiv": "2607.16173v2",
+      "version_date": "2026-08-11",
+      "url": "https://arxiv.org/abs/2607.16173v2",
+      "status": "preprint",
+      "used": "motion schema and corrected endpoint covariance; adapted CPU implementation"
+    },
+    {
+      "title": "Memory for Attention",
+      "arxiv": "2607.23797v2",
+      "version_date": "2026-09-12",
+      "url": "https://arxiv.org/abs/2607.23797v2",
+      "status": "preprint",
+      "used": "reobservation research direction and limitations; no optimal scheduler reproduction"
+    },
+    {
+      "title": "SuperMap",
+      "arxiv": "2608.22896v1",
+      "version_date": "2026-08-24",
+      "url": "https://arxiv.org/abs/2608.22896",
+      "status": "RSS 2026 journal reference on arXiv",
+      "used": "comparison for temporal association and existence; not implemented as full SLAM system"
+    },
+    {
+      "title": "ChronoGraph",
+      "arxiv": "2609.39665v2",
+      "version_date": "2026-10-03",
+      "url": "https://arxiv.org/abs/2609.39665v2",
+      "status": "preprint",
+      "used": "comparison and future interaction-state evaluation; no VLM fine-tuning or action planner reproduction"
+    }
+  ]
+}

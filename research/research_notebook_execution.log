@@ -1,0 +1,12 @@
+C:\Users\yuvar\AppData\Roaming\Python\Python313\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+Executed research cell 1
+Executed research cell 3
+Executed research cell 5
+Executed research cell 7
+Executed research cell 9
+Executed research cell 11
+Executed research cell 13
+Executed research cell 15
+Executed research cell 17
+CLEAN NOTEBOOK RUN COMPLETE

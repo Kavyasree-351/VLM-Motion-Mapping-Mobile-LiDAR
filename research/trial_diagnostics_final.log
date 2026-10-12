@@ -1,0 +1,170 @@
+Starting diagnostics
+Mapping and numerical dependencies imported
+Paired motion {'same_eligible_observations': 62, 'box_mean_flag_fraction': 0.006030326534957643, 'mask_mean_flag_fraction': 0.007089726535854399, 'box_median_pixels': 1414.0, 'mask_median_pixels': 2423.0, 'caveat': 'Paired diagnostic comparison. No true motion labels; lower flags alone do not prove improvement.'}
+Support gates complete
+Wall relations complete
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:  55%|#####4    | 218/398 [00:00<00:00, 2141.49it/s]
+Loading weights: 100%|##########| 398/398 [00:00<00:00, 2733.30it/s]
+Language patches complete
+{
+  "paired_motion": {
+    "same_eligible_observations": 62,
+    "box_mean_flag_fraction": 0.006030326534957643,
+    "mask_mean_flag_fraction": 0.007089726535854399,
+    "box_median_pixels": 1414.0,
+    "mask_median_pixels": 2423.0,
+    "caveat": "Paired diagnostic comparison. No true motion labels; lower flags alone do not prove improvement."
+  },
+  "support_trial": [
+    {
+      "frame": 450,
+      "mode": "strict",
+      "source_gate": 0.11,
+      "pixels": 48316,
+      "median_relative_target_disagreement": 0.003907457020715211,
+      "p90_relative_target_disagreement": 0.014416731268095034,
+      "occlusion_or_mismatch_fraction": 0.0045947512211275765
+    },
+    {
+      "frame": 450,
+      "mode": "adaptive",
+      "source_gate": 0.18,
+      "pixels": 48316,
+      "median_relative_target_disagreement": 0.003907457020715211,
+      "p90_relative_target_disagreement": 0.014416731268095034,
+      "occlusion_or_mismatch_fraction": 0.0045947512211275765
+    },
+    {
+      "frame": 750,
+      "mode": "strict",
+      "source_gate": 0.11,
+      "pixels": 43273,
+      "median_relative_target_disagreement": 0.04540951652955128,
+      "p90_relative_target_disagreement": 0.08360513838611013,
+      "occlusion_or_mismatch_fraction": 0.3411827236382964
+    },
+    {
+      "frame": 750,
+      "mode": "adaptive",
+      "source_gate": 0.18,
+      "pixels": 43273,
+      "median_relative_target_disagreement": 0.04540951652955128,
+      "p90_relative_target_disagreement": 0.08360513838611013,
+      "occlusion_or_mismatch_fraction": 0.3411827236382964
+    },
+    {
+      "frame": 1050,
+      "mode": "strict",
+      "source_gate": 0.11,
+      "pixels": 45028,
+      "median_relative_target_disagreement": 0.009440204646863567,
+      "p90_relative_target_disagreement": 0.016048936334914523,
+      "occlusion_or_mismatch_fraction": 0.010127032068934885
+    },
+    {
+      "frame": 1050,
+      "mode": "adaptive",
+      "source_gate": 0.18,
+      "pixels": 45028,
+      "median_relative_target_disagreement": 0.009440204646863567,
+      "p90_relative_target_disagreement": 0.016048936334914523,
+      "occlusion_or_mismatch_fraction": 0.010127032068934885
+    },
+    {
+      "frame": 1500,
+      "mode": "strict",
+      "source_gate": 0.11,
+      "pixels": 41435,
+      "median_relative_target_disagreement": 0.1579252979835178,
+      "p90_relative_target_disagreement": 0.20570707056394108,
+      "occlusion_or_mismatch_fraction": 1.0
+    },
+    {
+      "frame": 1500,
+      "mode": "adaptive",
+      "source_gate": 0.18,
+      "pixels": 43533,
+      "median_relative_target_disagreement": 0.1582119625571573,
+      "p90_relative_target_disagreement": 0.21004497462475022,
+      "occlusion_or_mismatch_fraction": 0.9999770289205889
+    },
+    {
+      "frame": 1720,
+      "mode": "strict",
+      "source_gate": 0.11,
+      "pixels": 40639,
+      "median_relative_target_disagreement": 0.015403859280237504,
+      "p90_relative_target_disagreement": 0.026662392781560615,
+      "occlusion_or_mismatch_fraction": 0.02143261399148601
+    },
+    {
+      "frame": 1720,
+      "mode": "adaptive",
+      "source_gate": 0.18,
+      "pixels": 40720,
+      "median_relative_target_disagreement": 0.015416425194824532,
+      "p90_relative_target_disagreement": 0.0269558280147262,
+      "occlusion_or_mismatch_fraction": 0.022421414538310414
+    },
+    {
+      "frame": 2000,
+      "mode": "strict",
+      "source_gate": 0.11,
+      "pixels": 10946,
+      "median_relative_target_disagreement": 0.057661875847366977,
+      "p90_relative_target_disagreement": 0.06800772570514779,
+      "occlusion_or_mismatch_fraction": 0.6383153663438699
+    },
+    {
+      "frame": 2000,
+      "mode": "adaptive",
+      "source_gate": 0.18,
+      "pixels": 15913,
+      "median_relative_target_disagreement": 0.05950399382365108,
+      "p90_relative_target_disagreement": 0.06927108845298623,
+      "occlusion_or_mismatch_fraction": 0.745302582793942
+    }
+  ],
+  "wall_relations": [
+    {
+      "object_id": "door_0",
+      "class_name": "door",
+      "wall_id": 0,
+      "wall_distance": 0.015154617401533059,
+      "status": "observed_wall_relation_candidate",
+      "opening_verified": false
+    },
+    {
+      "object_id": "picture_0",
+      "class_name": "picture",
+      "wall_id": 1,
+      "wall_distance": 0.00012053309146842911,
+      "status": "observed_wall_relation_candidate",
+      "opening_verified": false
+    },
+    {
+      "object_id": "window_0",
+      "class_name": "window",
+      "wall_id": 2,
+      "wall_distance": 0.1521242051300738,
+      "status": "observed_wall_relation_candidate",
+      "opening_verified": false
+    },
+    {
+      "object_id": "window_1",
+      "class_name": "window",
+      "wall_id": 1,
+      "wall_distance": 0.021981483957593848,
+      "status": "observed_wall_relation_candidate",
+      "opening_verified": false
+    }
+  ],
+  "patch_language": {
+    "patches": 72,
+    "frames": 6,
+    "memory_bytes": 147456,
+    "status": "coarse CPU patch-language feasibility; not full FUS3DMaps or dense voxel map"
+  }
+}

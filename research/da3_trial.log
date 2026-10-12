@@ -1,0 +1,77 @@
+D:\VLM-maps\.packages\torch\jit\_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[97m[INFO ] using MLP layer as FFN[0m
+Unused auxiliary-head checkpoint differences: ['head.scratch.output_conv2_aux.1.2.weight', 'head.scratch.output_conv2_aux.1.2.bias', 'head.scratch.output_conv2_aux.2.2.weight', 'head.scratch.output_conv2_aux.2.2.bias', 'head.scratch.output_conv2_aux.3.2.weight', 'head.scratch.output_conv2_aux.3.2.bias']
+[97m[INFO ] Using camera conditions provided by the user[0m
+DA3 predicted [430, 450, 470] (3, 294, 224)
+[97m[INFO ] Using camera conditions provided by the user[0m
+DA3 predicted [1480, 1500, 1520] (3, 294, 224)
+{
+  "model": "DA3-SMALL",
+  "frames": [
+    430,
+    450,
+    470,
+    1480,
+    1500,
+    1520
+  ],
+  "device": "cpu",
+  "input": "RGB + repaired ARKit poses + inferred intrinsics; direct official network, float32, no Gaussian export",
+  "results": [
+    {
+      "heldout_frame": 450,
+      "alignment_reference_frames": [
+        430,
+        470
+      ],
+      "pixels": 36772,
+      "median_relative_disagreement": 0.016768849950034075,
+      "p90_relative_disagreement": 0.04232982325487596,
+      "aligned_scale": 2.6628512229588797,
+      "aligned_offset": 0.028593659765679166,
+      "predicted_positive_pixel_fraction": 1.0
+    },
+    {
+      "heldout_frame": 1500,
+      "alignment_reference_frames": [
+        1480,
+        1520
+      ],
+      "pixels": 36710,
+      "median_relative_disagreement": 0.07449636684321341,
+      "p90_relative_disagreement": 0.09796875117082589,
+      "aligned_scale": 1.8396841842701463,
+      "aligned_offset": 0.23878105485239298,
+      "predicted_positive_pixel_fraction": 1.0
+    }
+  ],
+  "in_batch_consistency": [
+    {
+      "pair": [
+        450,
+        470
+      ],
+      "matched_source_pixels": 48314,
+      "median_reprojection_disagreement": {
+        "calibrated_export": 0.003907270361710431,
+        "DA3_aligned": 0.008381328694886387
+      },
+      "caveat": "In-batch consistency proxy, not holdout accuracy; model jointly sees these views and scale anchors."
+    },
+    {
+      "pair": [
+        1500,
+        1520
+      ],
+      "matched_source_pixels": 44079,
+      "median_reprojection_disagreement": {
+        "calibrated_export": 0.15859904509173048,
+        "DA3_aligned": 0.007748985977460254
+      },
+      "caveat": "In-batch consistency proxy, not holdout accuracy; model jointly sees these views and scale anchors."
+    }
+  ],
+  "runtime_seconds": 1.42184670000006,
+  "evaluation": "Held-out middle-view agreement with calibrated exported LiDAR; not independent accuracy. No pixels added to final mesh. Six-frame feasibility experiment, not a full model benchmark. Only optional auxiliary ray-head parameters are absent in checkpoint; main depth/confidence parameters loaded; no ray-head pose inference."
+}

@@ -1,0 +1,16 @@
+Paired motion {'same_eligible_observations': 62, 'box_mean_flag_fraction': 0.006030326534957643, 'mask_mean_flag_fraction': 0.007089726535854399, 'box_median_pixels': 1414.0, 'mask_median_pixels': 2423.0, 'caveat': 'Paired diagnostic comparison. No true motion labels; lower flags alone do not prove improvement.'}
+Support gates complete
+Traceback (most recent call last):
+  File "D:\VLM-maps\research\trial_diagnostics.py", line 86, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\VLM-maps\research\trial_diagnostics.py", line 83, in main
+    relations=wall_relations();print('Wall relations complete',flush=True)
+  File "D:\VLM-maps\research\trial_diagnostics.py", line 44, in wall_relations
+    s=np.dot(center-endpoints[0],d);distance=abs(np.cross(d,center-endpoints[0]))
+                                                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\VLM-maps\.packages\numpy\_core\numeric.py", line 1680, in cross
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Both input arrays must be (arrays of) 3-dimensional vectors, but they are 2 and 2 dimensional instead.

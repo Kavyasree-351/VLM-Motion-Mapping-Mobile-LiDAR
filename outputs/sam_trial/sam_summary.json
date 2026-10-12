@@ -1,0 +1,49 @@
+{
+  "fusion": {
+    "proposals": 243,
+    "sam_masks": 243,
+    "accepted_refinements": 186,
+    "fallbacks": 57,
+    "objects": 9,
+    "classes": [
+      "air vent",
+      "armchair",
+      "beanbag",
+      "door",
+      "picture",
+      "sofa",
+      "storage table",
+      "window",
+      "window"
+    ],
+    "geometry": "Existing measured mesh and room alignment; object masks refined only",
+    "limitations": "Geometry gates are consistency proxies, not annotated mask accuracy. Same-room visual references and inferred depth scale remain."
+  },
+  "tracking": {
+    "furniture": {
+      "frames_with_masks": 90,
+      "unique_ids": [
+        0
+      ],
+      "observations": 90
+    },
+    "beanbag": {
+      "frames_with_masks": 90,
+      "unique_ids": [
+        0
+      ],
+      "observations": 90
+    }
+  },
+  "motion_valid_pixels": {
+    "box": 7529,
+    "sam31_tracking": 9322,
+    "sam3_refinement": 8917
+  },
+  "tracked_mask_pixel_gain_percent": 23.814583610041183,
+  "motion_pairs": [
+    400,
+    450
+  ],
+  "claim": "Consistency and qualitative evidence; no ground-truth accuracy benchmark"
+}

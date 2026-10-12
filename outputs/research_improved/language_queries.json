@@ -1,0 +1,54 @@
+[
+  {
+    "query": "an orange beanbag chair",
+    "status": "candidate",
+    "cosine_similarity": 0.37251843415313557,
+    "margin": 0.11501366333520541,
+    "probability": null,
+    "note": "Similarity heuristic over sparse detected regions; candidate position can remain tentative.",
+    "landmark": {
+      "class_name": "beanbag",
+      "cluster_id": 0,
+      "world_x": 1.304402041923629,
+      "world_z": 0.0749086067027325,
+      "independent_viewpoints": 6,
+      "mean_confidence": 0.7799472212791443,
+      "spread_radius": 0.2197347079115582,
+      "cov_xx": 0.0308492006040524,
+      "cov_xz": -0.0054522856114642,
+      "cov_zz": 0.0465782152389727,
+      "status": "position_supported",
+      "embedding_views": 6
+    }
+  },
+  {
+    "query": "a black leather sofa",
+    "status": "candidate",
+    "cosine_similarity": 0.3720058420042102,
+    "margin": 0.0538580567002353,
+    "probability": null,
+    "note": "Similarity heuristic over sparse detected regions; candidate position can remain tentative.",
+    "landmark": {
+      "class_name": "sofa",
+      "cluster_id": 0,
+      "world_x": -0.1715363144694699,
+      "world_z": 0.7120270769493362,
+      "independent_viewpoints": 5,
+      "mean_confidence": 0.8349075078964233,
+      "spread_radius": 0.5563583000082876,
+      "cov_xx": 0.2940727043826511,
+      "cov_xz": 0.0572082890327597,
+      "cov_zz": 0.0978659949834827,
+      "status": "tentative",
+      "embedding_views": 5
+    }
+  },
+  {
+    "query": "a refrigerator",
+    "status": "unresolved",
+    "cosine_similarity": 0.21795196714596266,
+    "margin": 0.02454730899323282,
+    "probability": null,
+    "note": "Similarity heuristic over sparse detected regions; candidate position can remain tentative."
+  }
+]

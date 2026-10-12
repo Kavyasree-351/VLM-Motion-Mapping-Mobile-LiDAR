@@ -1,0 +1,9 @@
+{
+  "detections": 34,
+  "static_observations": 34,
+  "landmarks": 3,
+  "supported_landmarks": 1,
+  "semantics": "YOLO proposals plus CLIP vocabulary verification",
+  "class_caveat": "Labels remain model hypotheses; position support is separate from semantic correctness. Frame count is not independent evidence.",
+  "uncertainty": "ellipse combines spatial scatter and local calibration residual spread; not a calibrated confidence probability"
+}

@@ -1,0 +1,806 @@
+[
+  {
+    "id": "instance_000",
+    "class_name": "door",
+    "alternative_labels": {
+      "door": 13.864814043045044
+    },
+    "observations": 19,
+    "frames": [
+      0,
+      50,
+      85,
+      100,
+      125,
+      145,
+      150,
+      160,
+      170,
+      185,
+      200,
+      215,
+      235,
+      250,
+      255,
+      295,
+      300,
+      335,
+      350
+    ],
+    "status": "repeated_candidate",
+    "label_is_probability": false,
+    "eligible_pairs": 6,
+    "median_motion_score": 0.9265555264597101,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "not_observed_moving"
+  },
+  {
+    "id": "instance_001",
+    "class_name": "beanbag",
+    "alternative_labels": {
+      "beanbag": 16.420932680368423
+    },
+    "observations": 20,
+    "frames": [
+      200,
+      215,
+      235,
+      250,
+      255,
+      295,
+      300,
+      335,
+      350,
+      380,
+      400,
+      425,
+      450,
+      465,
+      490,
+      500,
+      520,
+      540,
+      550,
+      560
+    ],
+    "status": "repeated_candidate",
+    "label_is_probability": false,
+    "eligible_pairs": 5,
+    "median_motion_score": 0.7144998131651299,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "not_observed_moving"
+  },
+  {
+    "id": "instance_002",
+    "class_name": "air vent",
+    "alternative_labels": {
+      "air vent": 0.3541313409805298
+    },
+    "observations": 1,
+    "frames": [
+      250
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_003",
+    "class_name": "air vent",
+    "alternative_labels": {
+      "air vent": 3.896532371640205
+    },
+    "observations": 12,
+    "frames": [
+      250,
+      255,
+      295,
+      300,
+      335,
+      380,
+      400,
+      425,
+      450,
+      465,
+      490,
+      500
+    ],
+    "status": "repeated_candidate",
+    "label_is_probability": false,
+    "eligible_pairs": 3,
+    "median_motion_score": 1.49960945044768,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "not_observed_moving"
+  },
+  {
+    "id": "instance_004",
+    "class_name": "sofa",
+    "alternative_labels": {
+      "sofa": 0.2934636175632477
+    },
+    "observations": 1,
+    "frames": [
+      380
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_005",
+    "class_name": "sofa",
+    "alternative_labels": {
+      "sofa": 7.73627907037735
+    },
+    "observations": 10,
+    "frames": [
+      400,
+      425,
+      450,
+      465,
+      490,
+      500,
+      520,
+      540,
+      550,
+      560
+    ],
+    "status": "repeated_candidate",
+    "label_is_probability": false,
+    "eligible_pairs": 2,
+    "median_motion_score": 0.971532771124717,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "not_observed_moving"
+  },
+  {
+    "id": "instance_006",
+    "class_name": "window",
+    "alternative_labels": {
+      "window": 0.3040630519390106
+    },
+    "observations": 1,
+    "frames": [
+      520
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_007",
+    "class_name": "window",
+    "alternative_labels": {
+      "window": 0.4165154695510864
+    },
+    "observations": 1,
+    "frames": [
+      540
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_008",
+    "class_name": "window",
+    "alternative_labels": {
+      "window": 4.526144921779632
+    },
+    "observations": 13,
+    "frames": [
+      560,
+      615,
+      640,
+      650,
+      670,
+      700,
+      715,
+      750,
+      785,
+      800,
+      820,
+      845,
+      850
+    ],
+    "status": "repeated_candidate",
+    "label_is_probability": false,
+    "eligible_pairs": 3,
+    "median_motion_score": 0.7696809615629484,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "not_observed_moving"
+  },
+  {
+    "id": "instance_009",
+    "class_name": "sofa",
+    "alternative_labels": {
+      "sofa": 13.563403069972992
+    },
+    "observations": 17,
+    "frames": [
+      585,
+      600,
+      615,
+      640,
+      650,
+      670,
+      700,
+      715,
+      735,
+      750,
+      770,
+      785,
+      800,
+      820,
+      845,
+      850,
+      860
+    ],
+    "status": "repeated_candidate",
+    "label_is_probability": false,
+    "eligible_pairs": 5,
+    "median_motion_score": 0.6942685871828351,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "not_observed_moving"
+  },
+  {
+    "id": "instance_010",
+    "class_name": "beanbag",
+    "alternative_labels": {
+      "beanbag": 1.0421618819236755
+    },
+    "observations": 2,
+    "frames": [
+      585,
+      600
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 1,
+    "median_motion_score": 0.7211019337057234,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_011",
+    "class_name": "storage table",
+    "alternative_labels": {
+      "storage table": 36.080536901950836
+    },
+    "observations": 39,
+    "frames": [
+      615,
+      640,
+      650,
+      670,
+      700,
+      715,
+      735,
+      750,
+      770,
+      785,
+      800,
+      820,
+      845,
+      850,
+      860,
+      870,
+      885,
+      900,
+      920,
+      935,
+      950,
+      960,
+      975,
+      995,
+      1000,
+      1020,
+      1050,
+      1060,
+      1100,
+      1115,
+      1135,
+      1150,
+      1165,
+      1190,
+      1200,
+      1220,
+      1245,
+      1250,
+      1265
+    ],
+    "status": "repeated_candidate",
+    "label_is_probability": false,
+    "eligible_pairs": 12,
+    "median_motion_score": 0.8561350911517126,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "not_observed_moving"
+  },
+  {
+    "id": "instance_012",
+    "class_name": "picture",
+    "alternative_labels": {
+      "picture": 30.33059087395668
+    },
+    "observations": 35,
+    "frames": [
+      700,
+      715,
+      735,
+      750,
+      800,
+      820,
+      850,
+      860,
+      870,
+      885,
+      900,
+      920,
+      935,
+      950,
+      960,
+      975,
+      995,
+      1000,
+      1020,
+      1050,
+      1060,
+      1100,
+      1115,
+      1135,
+      1150,
+      1165,
+      1190,
+      1200,
+      1220,
+      1245,
+      1250,
+      1265,
+      1295,
+      1300,
+      1315
+    ],
+    "status": "repeated_candidate",
+    "label_is_probability": false,
+    "eligible_pairs": 12,
+    "median_motion_score": 0.8751598174354196,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "not_observed_moving"
+  },
+  {
+    "id": "instance_013",
+    "class_name": "sofa",
+    "alternative_labels": {
+      "sofa": 1.5139206498861313
+    },
+    "observations": 4,
+    "frames": [
+      870,
+      885,
+      935,
+      1020
+    ],
+    "status": "repeated_candidate",
+    "label_is_probability": false,
+    "eligible_pairs": 2,
+    "median_motion_score": 0.8255054863212234,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "not_observed_moving"
+  },
+  {
+    "id": "instance_014",
+    "class_name": "air vent",
+    "alternative_labels": {
+      "air vent": 0.5281877815723419,
+      "window": 0.2975502610206604
+    },
+    "observations": 3,
+    "frames": [
+      1250,
+      1265,
+      1315
+    ],
+    "status": "repeated_candidate",
+    "label_is_probability": false,
+    "eligible_pairs": 1,
+    "median_motion_score": 1.0901807111953192,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_015",
+    "class_name": "storage table",
+    "alternative_labels": {
+      "storage table": 0.6003738641738892
+    },
+    "observations": 2,
+    "frames": [
+      1295,
+      1300
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 1,
+    "median_motion_score": 1.558080740886672,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_016",
+    "class_name": "window",
+    "alternative_labels": {
+      "window": 2.1195523142814636
+    },
+    "observations": 6,
+    "frames": [
+      1295,
+      1315,
+      1340,
+      1500,
+      1550,
+      1600
+    ],
+    "status": "repeated_candidate",
+    "label_is_probability": false,
+    "eligible_pairs": 1,
+    "median_motion_score": 0.9710884696477549,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_017",
+    "class_name": "armchair",
+    "alternative_labels": {
+      "armchair": 0.8522328734397888
+    },
+    "observations": 1,
+    "frames": [
+      1340
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_018",
+    "class_name": "window",
+    "alternative_labels": {
+      "window": 0.5404479950666428
+    },
+    "observations": 2,
+    "frames": [
+      1340,
+      1550
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 1,
+    "median_motion_score": 0.7705136771708188,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_019",
+    "class_name": "armchair",
+    "alternative_labels": {
+      "armchair": 1.6590136885643005
+    },
+    "observations": 2,
+    "frames": [
+      1350,
+      1370
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 1,
+    "median_motion_score": 1.2891392325050888,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_020",
+    "class_name": "window",
+    "alternative_labels": {
+      "window": 2.3133830428123474
+    },
+    "observations": 4,
+    "frames": [
+      1350,
+      1370,
+      1450,
+      1470
+    ],
+    "status": "repeated_candidate",
+    "label_is_probability": false,
+    "eligible_pairs": 1,
+    "median_motion_score": 0.9419687582331349,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_021",
+    "class_name": "armchair",
+    "alternative_labels": {
+      "armchair": 1.8335902094841003
+    },
+    "observations": 2,
+    "frames": [
+      1395,
+      1400
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_022",
+    "class_name": "window",
+    "alternative_labels": {
+      "window": 0.4914289712905884
+    },
+    "observations": 1,
+    "frames": [
+      1395
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_023",
+    "class_name": "window",
+    "alternative_labels": {
+      "window": 0.6227208375930786
+    },
+    "observations": 1,
+    "frames": [
+      1400
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_024",
+    "class_name": "armchair",
+    "alternative_labels": {
+      "armchair": 1.7649801969528198
+    },
+    "observations": 2,
+    "frames": [
+      1445,
+      1525
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_025",
+    "class_name": "window",
+    "alternative_labels": {
+      "window": 0.8313568532466888
+    },
+    "observations": 2,
+    "frames": [
+      1445,
+      1525
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_026",
+    "class_name": "armchair",
+    "alternative_labels": {
+      "armchair": 1.7946500182151794
+    },
+    "observations": 2,
+    "frames": [
+      1450,
+      1470
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_027",
+    "class_name": "armchair",
+    "alternative_labels": {
+      "armchair": 9.73191785812378
+    },
+    "observations": 11,
+    "frames": [
+      1500,
+      1550,
+      1600,
+      1650,
+      1655,
+      1690,
+      1700,
+      1720,
+      1740,
+      1750,
+      1780
+    ],
+    "status": "repeated_candidate",
+    "label_is_probability": false,
+    "eligible_pairs": 4,
+    "median_motion_score": 1.0112235083682262,
+    "median_reliability": 0.0,
+    "moving_votes": 0,
+    "motion_state": "not_observed_moving"
+  },
+  {
+    "id": "instance_028",
+    "class_name": "window",
+    "alternative_labels": {
+      "window": 0.2711602747440338
+    },
+    "observations": 1,
+    "frames": [
+      1720
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_029",
+    "class_name": "armchair",
+    "alternative_labels": {
+      "armchair": 0.7922742962837219
+    },
+    "observations": 1,
+    "frames": [
+      1800
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_030",
+    "class_name": "door",
+    "alternative_labels": {
+      "door": 0.3169549107551574
+    },
+    "observations": 1,
+    "frames": [
+      1930
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_031",
+    "class_name": "door",
+    "alternative_labels": {
+      "door": 0.6236898303031921
+    },
+    "observations": 1,
+    "frames": [
+      1945
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_032",
+    "class_name": "door",
+    "alternative_labels": {
+      "door": 0.5622696876525879
+    },
+    "observations": 1,
+    "frames": [
+      1950
+    ],
+    "status": "unconfirmed",
+    "label_is_probability": false,
+    "eligible_pairs": 0,
+    "median_motion_score": null,
+    "median_reliability": null,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  },
+  {
+    "id": "instance_033",
+    "class_name": "door",
+    "alternative_labels": {
+      "door": 1.832320213317871
+    },
+    "observations": 4,
+    "frames": [
+      2000,
+      2045,
+      2050,
+      2090
+    ],
+    "status": "repeated_candidate",
+    "label_is_probability": false,
+    "eligible_pairs": 1,
+    "median_motion_score": 2.963020647393166,
+    "median_reliability": 0.30784275674143563,
+    "moving_votes": 0,
+    "motion_state": "motion_unknown"
+  }
+]

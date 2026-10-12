@@ -1,0 +1,8 @@
+{
+  "seconds": 30.711895200000072,
+  "frames": 103,
+  "candidate_observations": 243,
+  "accepted_masks": 243,
+  "minimum_prompt_box_iou": 0.5,
+  "peak_vram_bytes": 5488542720
+}

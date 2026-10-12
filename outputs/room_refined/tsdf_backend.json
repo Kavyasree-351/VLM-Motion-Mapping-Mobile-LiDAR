@@ -1,0 +1,16 @@
+{
+  "backend": "Open3D tensor VoxelBlockGrid",
+  "open3d_version": "0.20.0",
+  "input_depth": "uint16 with scale 1000, quantization at 0.001 pose unit",
+  "color": "uint8 RGB",
+  "voxel_size": 0.025,
+  "trunc_voxel_multiplier": 4.0,
+  "mesh_minimum_weight": 2.0,
+  "frames_skipped_for_no_supported_depth": [
+    1930,
+    1945,
+    1950
+  ],
+  "legacy_regression_reference": "https://github.com/isl-org/Open3D/issues/7592",
+  "legacy_reproduction": "Valid 2-unit synthetic plane yields 49152 back-projected points and zero legacy TSDF vertices; tensor backend yielded 3763 vertices in the probe."
+}

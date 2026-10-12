@@ -1,0 +1,450 @@
+{
+  "inline_notebook_figures": 25,
+  "artifacts": [
+    {
+      "path": "outputs\\30_frame_pointcloud.ply",
+      "bytes": 23642246,
+      "type": ".ply",
+      "points": 875631,
+      "finite": true,
+      "bbox_range": [
+        236.85,
+        273.14388,
+        247.0
+      ],
+      "bbox_min": [
+        -120.0,
+        -137.92896000000002,
+        5.0
+      ],
+      "bbox_max": [
+        116.85,
+        135.21492,
+        252.0
+      ]
+    },
+    {
+      "path": "outputs\\final_vlmaps_outputs\\final_qualitative_map_metadata.json",
+      "bytes": 533,
+      "type": ".json",
+      "metadata": {
+        "type": "qualitative_relative_depth_map",
+        "depth_representation": "8-bit-like relative depth; not metric",
+        "pose_format": "tx ty tz qx qy qz qw",
+        "pose_assumption": "camera-to-world",
+        "rgb_frames": 2091,
+        "depth_frames": 2091,
+        "frame_step": 5,
+        "pseudo_near": 0.5,
+        "pseudo_far": 2.5,
+        "map_resolution": 0.02,
+        "map_margin": 3.0,
+        "topdown_axes": "world X-Z",
+        "vertical_axis": "world Y",
+        "provisional_intrinsics": {
+          "fx": 200.0,
+          "fy": 200.0,
+          "cx": 96.0,
+          "cy": 127.712
+        }
+      }
+    },
+    {
+      "path": "outputs\\final_vlmaps_outputs\\qualitative_room_vlmaps_style.ply",
+      "bytes": 6011408,
+      "type": ".ply",
+      "points": 222637,
+      "finite": true,
+      "bbox_range": [
+        5.793078174617306,
+        2.1695892403949686,
+        6.172673084490631
+      ],
+      "bbox_min": [
+        -3.0520284161186217,
+        -0.7275981148562153,
+        -3.680289886506783
+      ],
+      "bbox_max": [
+        2.741049758498684,
+        1.4419911255387534,
+        2.4923831979838478
+      ]
+    },
+    {
+      "path": "outputs\\final_vlmaps_outputs\\qualitative_topdown_final.png",
+      "bytes": 39865,
+      "type": ".png",
+      "image_size": [
+        395,
+        374
+      ]
+    },
+    {
+      "path": "outputs\\final_vlmaps_outputs\\vlmaps_style_room_animation.mp4",
+      "bytes": 990144,
+      "type": ".mp4"
+    },
+    {
+      "path": "outputs\\frame_000_pointcloud.ply",
+      "bytes": 893395,
+      "type": ".ply",
+      "points": 33081,
+      "finite": true,
+      "bbox_range": [
+        92.1825,
+        207.71848,
+        239.0
+      ],
+      "bbox_min": [
+        -46.48,
+        -89.28144,
+        11.0
+      ],
+      "bbox_max": [
+        45.7025,
+        118.43704,
+        250.0
+      ]
+    },
+    {
+      "path": "outputs\\fused_30_frames.ply",
+      "bytes": 28004286,
+      "type": ".ply",
+      "points": 1037188,
+      "finite": true,
+      "bbox_range": [
+        11.710289374378451,
+        5.298710868209836,
+        11.595243368935515
+      ],
+      "bbox_min": [
+        -5.919271051327744,
+        -2.080916949500466,
+        -6.298624957948125
+      ],
+      "bbox_max": [
+        5.791018323050706,
+        3.2177939187093703,
+        5.29661841098739
+      ]
+    },
+    {
+      "path": "outputs\\fusion_forward_test.ply",
+      "bytes": 32664756,
+      "type": ".ply",
+      "points": 1209798,
+      "finite": true,
+      "bbox_range": [
+        11.885123840384786,
+        5.375711925588454,
+        11.926576196331542
+      ],
+      "bbox_min": [
+        -6.034055308984045,
+        -2.080916949500466,
+        -6.550858271594093
+      ],
+      "bbox_max": [
+        5.851068531400741,
+        3.2947949760879878,
+        5.375717924737449
+      ]
+    },
+    {
+      "path": "outputs\\fusion_inverse_test.ply",
+      "bytes": 32652876,
+      "type": ".ply",
+      "points": 1209358,
+      "finite": true,
+      "bbox_range": [
+        11.883512114061489,
+        5.730313855958582,
+        12.06097295750337
+      ],
+      "bbox_min": [
+        -5.873321607544137,
+        -2.7995230590362357,
+        -6.471450762747143
+      ],
+      "bbox_max": [
+        6.010190506517352,
+        2.9307907969223463,
+        5.589522194756227
+      ]
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\camera_centers.npy",
+      "bytes": 5168,
+      "type": ".npy"
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\camera_position_rgb_map.png",
+      "bytes": 3012,
+      "type": ".png",
+      "image_size": [
+        395,
+        374
+      ]
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\clustered_topdown_objects.csv",
+      "bytes": 550,
+      "type": ".csv",
+      "lines": 8
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\complete_room_pointcloud_2cm.ply",
+      "bytes": 141412278,
+      "type": ".ply",
+      "points": 5237484,
+      "finite": true,
+      "bbox_range": [
+        10.150719475910485,
+        4.0459490090402825,
+        10.405821611725187
+      ],
+      "bbox_min": [
+        -5.262693811996715,
+        -1.4885619439565287,
+        -5.674118103735945
+      ],
+      "bbox_max": [
+        4.888025663913771,
+        2.557387065083754,
+        4.731703507989241
+      ]
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\complete_room_pointcloud_5cm.xyz",
+      "bytes": 37175726,
+      "type": ".xyz"
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\complete_room_pointcloud_5cm_online.ply",
+      "bytes": 24602069,
+      "type": ".ply",
+      "points": 911180,
+      "finite": true,
+      "bbox_range": [
+        10.14986571211466,
+        4.045447082964128,
+        10.405571208063735
+      ],
+      "bbox_min": [
+        -5.262693811996715,
+        -1.4884559354401803,
+        -5.673888748730581
+      ],
+      "bbox_max": [
+        4.887171900117946,
+        2.556991147523948,
+        4.731682459333154
+      ]
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\fused_world_pointcloud_2cm.ply",
+      "bytes": 146917659,
+      "type": ".ply",
+      "points": 5441387,
+      "finite": true,
+      "bbox_range": [
+        10.150719475910485,
+        4.045973085462824,
+        10.405821611725187
+      ],
+      "bbox_min": [
+        -5.262693811996715,
+        -1.4885619439565287,
+        -5.674118103735945
+      ],
+      "bbox_max": [
+        4.888025663913771,
+        2.557411141506296,
+        4.731703507989241
+      ]
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\object_detections.csv",
+      "bytes": 31346,
+      "type": ".csv",
+      "lines": 146
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\provisional_topdown.png",
+      "bytes": 8532,
+      "type": ".png",
+      "image_size": [
+        509,
+        522
+      ]
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\qualitative_object_map.png",
+      "bytes": 103779,
+      "type": ".png",
+      "image_size": [
+        395,
+        374
+      ]
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\qualitative_room_pointcloud_detail_2cm.ply",
+      "bytes": 53368491,
+      "type": ".ply",
+      "points": 1976603,
+      "finite": true,
+      "bbox_range": [
+        5.801566455294482,
+        2.172565495309737,
+        6.174547416355537
+      ],
+      "bbox_min": [
+        -3.056999210963856,
+        -0.7263162673141048,
+        -3.680912774214443
+      ],
+      "bbox_max": [
+        2.7445672443306264,
+        1.4462492279956318,
+        2.493634642141094
+      ]
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\qualitative_room_pointcloud_online_5cm.ply",
+      "bytes": 6371858,
+      "type": ".ply",
+      "points": 235987,
+      "finite": true,
+      "bbox_range": [
+        5.799009833088434,
+        2.171812318013629,
+        6.171792837403044
+      ],
+      "bbox_min": [
+        -3.0560711766208954,
+        -0.7259029407530362,
+        -3.67943411427358
+      ],
+      "bbox_max": [
+        2.7429386564675378,
+        1.4459093772605929,
+        2.4923587231294637
+      ]
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\qualitative_topdown_occupancy.png",
+      "bytes": 2421,
+      "type": ".png",
+      "image_size": [
+        395,
+        374
+      ]
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\reconstruction_metadata.json",
+      "bytes": 714,
+      "type": ".json",
+      "metadata": {
+        "num_rgb_frames": 2091,
+        "num_depth_frames": 2091,
+        "num_poses": 2091,
+        "selected_frames": 210,
+        "frame_step": 10,
+        "depth_raw_percentiles": [
+          12.0,
+          31.0,
+          94.0,
+          146.0,
+          193.0,
+          231.0,
+          245.0
+        ],
+        "depth_max_raw": 255.0,
+        "room_max_meters": 5.0,
+        "depth_scale_raw_units_per_meter": 51.0,
+        "depth_intrinsics": {
+          "fx": 200.0,
+          "fy": 200.0,
+          "cx": 96.0,
+          "cy": 127.712
+        },
+        "voxel_size_m": 0.02,
+        "topdown_resolution_m": 0.02,
+        "pose_format": "tx ty tz qx qy qz qw",
+        "pose_assumption": "camera-to-world",
+        "vertical_axis_assumption": "world Y",
+        "topdown_axes": "world X-Z",
+        "rgb_depth_alignment": "provisional resize only"
+      }
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\reliable_static_object_map.png",
+      "bytes": 101499,
+      "type": ".png",
+      "image_size": [
+        2400,
+        2000
+      ]
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\reliable_static_objects.csv",
+      "bytes": 275,
+      "type": ".csv",
+      "lines": 4
+    },
+    {
+      "path": "outputs\\reconstruction_outputs\\stable_topdown_object_map.png",
+      "bytes": 106585,
+      "type": ".png",
+      "image_size": [
+        2400,
+        2000
+      ]
+    },
+    {
+      "path": "outputs\\test_forward_002.ply",
+      "bytes": 28387200,
+      "type": ".ply",
+      "points": 1051370,
+      "finite": true,
+      "bbox_range": [
+        11.885123840384786,
+        5.375711925588454,
+        11.926576196331542
+      ],
+      "bbox_min": [
+        -6.034055308984045,
+        -2.080916949500466,
+        -6.550858271594093
+      ],
+      "bbox_max": [
+        5.851068531400741,
+        3.2947949760879878,
+        5.375717924737449
+      ]
+    },
+    {
+      "path": "outputs\\test_inverse_002.ply",
+      "bytes": 28324209,
+      "type": ".ply",
+      "points": 1049037,
+      "finite": true,
+      "bbox_range": [
+        11.883512114061489,
+        5.730313855958582,
+        12.06097295750337
+      ],
+      "bbox_min": [
+        -5.873321607544137,
+        -2.7995230590362357,
+        -6.471450762747143
+      ],
+      "bbox_max": [
+        6.010190506517352,
+        2.9307907969223463,
+        5.589522194756227
+      ]
+    }
+  ]
+}

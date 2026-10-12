@@ -1,0 +1,92 @@
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 398/398 [00:00<00:00, 12005.88it/s]
+CLIP crops 12 / 55
+CLIP crops 24 / 55
+CLIP crops 36 / 55
+CLIP crops 48 / 55
+CLIP crops 55 / 55
+{
+  "model": "openai/clip-vit-base-patch32",
+  "proposals": 55,
+  "accepted": 34,
+  "unresolved": 21,
+  "original_bed_proposals": 15,
+  "bed_proposals_reidentified_as_beanbag": 13,
+  "vocabulary": {
+    "beanbag": [
+      "beanbag chair",
+      "bean bag seat"
+    ],
+    "bed": [
+      "bed with mattress",
+      "bed"
+    ],
+    "armchair": [
+      "armchair",
+      "single upholstered chair"
+    ],
+    "sofa": [
+      "sofa",
+      "couch"
+    ],
+    "office chair": [
+      "office chair",
+      "desk chair"
+    ],
+    "table": [
+      "table",
+      "small side table"
+    ],
+    "shelf": [
+      "shelving unit",
+      "bookcase"
+    ],
+    "cabinet": [
+      "cabinet",
+      "cupboard"
+    ],
+    "refrigerator": [
+      "refrigerator",
+      "fridge"
+    ],
+    "door": [
+      "door",
+      "wooden door"
+    ],
+    "window": [
+      "window",
+      "glass window"
+    ],
+    "person": [
+      "person",
+      "human"
+    ],
+    "lamp": [
+      "lamp",
+      "light fixture"
+    ],
+    "plant": [
+      "plant",
+      "potted plant"
+    ],
+    "picture": [
+      "framed picture",
+      "wall painting"
+    ],
+    "bag": [
+      "bag",
+      "backpack"
+    ],
+    "curtain": [
+      "curtain",
+      "window blind"
+    ],
+    "television": [
+      "television",
+      "TV screen"
+    ]
+  },
+  "acceptance_rule": "cosine >= 0.23 and top-two margin >= 0.015; heuristic, not probability calibration",
+  "limitations": "Proposal recall limited by YOLO; no dense language map; vocabulary-conditioned decisions; CLIP acceptance does not prove class correctness."
+}

@@ -1,0 +1,16 @@
+{
+  "sam3": {
+    "sha256": "9999e2341ceef5e136daa386eecb55cb414446a00ac2b55eb2dfd2f7c3cf8c9e",
+    "bytes": 3450062241,
+    "verified": true
+  },
+  "sam31": {
+    "sha256": "0567debeec80ba4ac6369540c6c248025283cb3ff2b92827509e57e2b3541cb6",
+    "bytes": 3502755717,
+    "verified": true
+  },
+  "notebook": {
+    "executed_cells": 5,
+    "errors": 0
+  }
+}

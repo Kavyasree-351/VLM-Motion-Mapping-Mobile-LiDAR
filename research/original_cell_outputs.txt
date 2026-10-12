@@ -1,0 +1,1719 @@
+
+CELL -1
+
+CELL 0
+
+CELL 1
+Jupyter environment detected. Enabling Open3D WebVisualizer.
+[Open3D INFO] WebRTC GUI backend enabled.
+[Open3D INFO] WebRTCWindowSystem: HTTP handshake server disabled.
+Dataset: D:/VLM-maps/dataset/content/vlmaps_dataset/my_custom_scene
+RGB exists: True
+Depth exists: True
+Poses exists: True
+
+RGB files: 2091
+Depth files: 2091
+Pose shape: (2091, 7)
+First pose: [ 0.05893505  0.12546577 -0.89114189  0.01234622 -0.62671208 -0.01608825
+  0.77898699]
+
+CELL 2
+Open3D version: 0.20.0
+
+CELL 3
+
+CELL 4
+RGB shape: (960, 720, 3)
+Depth shape: (256, 192)
+Depth dtype: float32
+Depth range: 0.0 to 255.0
+<Figure size 1200x500 with 3 Axes>
+CELL 5
+
+CELL 6
+RGB: (960, 720, 3)
+Depth: (256, 192)
+
+Depth intrinsics:
+fx = 200.0
+fy = 200.0
+cx = 96.0
+cy = 127.712
+
+Valid depth pixels: 48152
+Depth percentile range: 11.0 to 250.0
+
+3D points: (48152, 3)
+Points after downsampling: 33081
+
+Saved: D:/VLM-maps/outputs/frame_000_pointcloud.ply
+
+CELL 7
+<Figure size 1200x1000 with 1 Axes>
+CELL 8
+<Figure size 1200x1000 with 1 Axes>
+CELL 9
+Frame 1040: 48,345 raw → 31,132 points
+Frame 1041: 48,220 raw → 31,327 points
+Frame 1042: 48,312 raw → 31,068 points
+Frame 1043: 48,238 raw → 31,264 points
+Frame 1044: 48,247 raw → 30,083 points
+Frame 1045: 48,249 raw → 30,384 points
+Frame 1046: 48,272 raw → 30,662 points
+Frame 1047: 48,227 raw → 30,860 points
+Frame 1048: 48,271 raw → 31,144 points
+Frame 1049: 48,293 raw → 30,983 points
+
+Generated: 10 point clouds
+
+CELL 10
+<Figure size 1200x1000 with 1 Axes>
+CELL 11
+Frame 0000: 48,152 points
+Frame 0072: 48,236 points
+Frame 0144: 48,244 points
+Frame 0216: 48,225 points
+Frame 0288: 48,270 points
+Frame 0360: 48,215 points
+Frame 0432: 48,350 points
+Frame 0504: 48,390 points
+Frame 0576: 48,206 points
+Frame 0648: 48,231 points
+Frame 0720: 48,332 points
+Frame 0792: 48,306 points
+Frame 0864: 48,357 points
+Frame 0936: 48,240 points
+Frame 1008: 48,248 points
+Frame 1081: 48,325 points
+Frame 1153: 48,238 points
+Frame 1225: 48,233 points
+Frame 1297: 48,183 points
+Frame 1369: 48,307 points
+Frame 1441: 48,263 points
+Frame 1513: 48,204 points
+Frame 1585: 48,221 points
+Frame 1657: 48,221 points
+Frame 1729: 48,225 points
+Frame 1801: 48,207 points
+Frame 1873: 48,202 points
+Frame 1945: 48,302 points
+Frame 2017: 48,387 points
+Frame 2090: 48,484 points
+
+==============================
+Frames processed: 30
+Total points: 1,448,004
+==============================
+Points after downsampling: 875,631
+Saved: D:/VLM-maps/outputs/30_frame_pointcloud.ply
+
+CELL 12
+Frame 0000: 48,152 points -> world coordinates
+Frame 0072: 48,236 points -> world coordinates
+Frame 0144: 48,244 points -> world coordinates
+Frame 0216: 48,225 points -> world coordinates
+Frame 0288: 48,270 points -> world coordinates
+Frame 0360: 48,215 points -> world coordinates
+Frame 0432: 48,350 points -> world coordinates
+Frame 0504: 48,390 points -> world coordinates
+Frame 0576: 48,206 points -> world coordinates
+Frame 0648: 48,231 points -> world coordinates
+Frame 0720: 48,332 points -> world coordinates
+Frame 0792: 48,306 points -> world coordinates
+Frame 0864: 48,357 points -> world coordinates
+Frame 0936: 48,240 points -> world coordinates
+Frame 1008: 48,248 points -> world coordinates
+Frame 1081: 48,325 points -> world coordinates
+Frame 1153: 48,238 points -> world coordinates
+Frame 1225: 48,233 points -> world coordinates
+Frame 1297: 48,183 points -> world coordinates
+Frame 1369: 48,307 points -> world coordinates
+Frame 1441: 48,263 points -> world coordinates
+Frame 1513: 48,204 points -> world coordinates
+Frame 1585: 48,221 points -> world coordinates
+Frame 1657: 48,221 points -> world coordinates
+Frame 1729: 48,225 points -> world coordinates
+Frame 1801: 48,207 points -> world coordinates
+Frame 1873: 48,202 points -> world coordinates
+Frame 1945: 48,302 points -> world coordinates
+Frame 2017: 48,387 points -> world coordinates
+Frame 2090: 48,484 points -> world coordinates
+
+==============================
+FUSION COMPLETE
+==============================
+Frames: 30
+Raw fused points: 1,448,004
+After downsampling: 1,037,188
+Saved: D:/VLM-maps/outputs/fused_30_frames.ply
+
+CELL 13
+WORKING DIRECTORY:
+D:\VLM-maps
+
+FILES IN D:/VLM-maps/outputs:
+D:/VLM-maps/outputs\30_frame_pointcloud.ply
+D:/VLM-maps/outputs\frame_000_pointcloud.ply
+D:/VLM-maps/outputs\fused_30_frames.ply
+D:/VLM-maps/outputs\fusion_forward_test.ply
+D:/VLM-maps/outputs\fusion_inverse_test.ply
+D:/VLM-maps/outputs\test_forward_002.ply
+D:/VLM-maps/outputs\test_inverse_002.ply
+
+CELL 14
+Exists: True
+Size: 26.706968307495117 MB
+
+CELL 15
+PointCloud with 1037188 points.
+
+CELL 16
+<Figure size 1200x900 with 1 Axes>
+CELL 17
+Pose shape: (2091, 7)
+Pose format first row:
+[ 0.05893505  0.12546577 -0.89114189  0.01234622 -0.62671208 -0.01608825
+  0.77898699]
+
+Camera trajectory:
+X: -1.0122720003128052 to 0.8368967771530151
+Y: 0.1254657655954361 to 0.17370648682117462
+Z: -1.349399447441101 to 0.09456147253513336
+
+Trajectory bounding-box size:
+[1.84916878 0.04824072 1.44396092]
+
+Point cloud:
+Number of points: 1037188
+Min XYZ: [-5.91927105 -2.08091695 -6.29862496]
+Max XYZ: [5.79101832 3.21779392 5.29661841]
+Center: [ 0.04222292  0.42583335 -0.18511896]
+
+Point-cloud bounding-box size:
+[11.71028937  5.29871087 11.59524337]
+
+Quaternion norms:
+min: 0.9999999336790997
+max: 1.000000095185346
+mean: 0.9999999972968534
+
+First → last camera displacement: 1.2557929054996784 pose units
+Maximum camera-to-camera distance: 2.311928338332416
+
+CELL 18
+RGB files: 2091
+Depth files: 2091
+Poses: 2091
+Frame 0: 49,128 points
+Frame 72: 49,136 points
+Frame 144: 49,144 points
+Frame 216: 49,152 points
+Frame 288: 49,152 points
+Frame 360: 49,152 points
+Frame 432: 49,152 points
+Frame 504: 49,152 points
+Frame 576: 49,098 points
+Frame 648: 49,152 points
+Frame 720: 49,144 points
+Frame 792: 49,144 points
+Frame 864: 49,152 points
+Frame 936: 49,152 points
+Frame 1008: 49,152 points
+Frame 1081: 49,152 points
+Frame 1153: 49,152 points
+Frame 1225: 49,152 points
+Frame 1297: 49,152 points
+Frame 1369: 49,152 points
+Frame 1441: 49,152 points
+Frame 1513: 49,134 points
+Frame 1585: 49,055 points
+Frame 1657: 49,152 points
+Frame 1729: 49,152 points
+Frame 1801: 49,150 points
+Frame 1873: 49,152 points
+Frame 1945: 49,152 points
+Frame 2017: 49,152 points
+Frame 2090: 49,149 points
+
+==============================
+FORWARD
+==============================
+Points: 1209798
+Min: [-6.03405531 -2.08091695 -6.55085827]
+Max: [5.85106853 3.29479498 5.37571792]
+Size: [11.88512384  5.37571193 11.9265762 ]
+Center: [ 0.05688515  0.423818   -0.19481178]
+
+==============================
+INVERSE
+==============================
+Points: 1209358
+Min: [-5.87332161 -2.79952306 -6.47145076]
+Max: [6.01019051 2.9307908  5.58952219]
+Size: [11.88351211  5.73031386 12.06097296]
+Center: [-0.3114633  -0.09532358 -0.13679046]
+
+Saved:
+D:/VLM-maps/outputs/fusion_forward_test.ply
+D:/VLM-maps/outputs/fusion_inverse_test.ply
+
+CELL 19
+RGB files: 2091
+Depth .npy files: 2091
+Poses: 2091
+
+First RGB: 000000.png
+First depth: 000000.npy
+Frame 0: 49,128 points
+Frame 72: 49,136 points
+Frame 144: 49,144 points
+Frame 216: 49,152 points
+Frame 288: 49,152 points
+Frame 360: 49,152 points
+Frame 432: 49,152 points
+Frame 504: 49,152 points
+Frame 576: 49,098 points
+Frame 648: 49,152 points
+Frame 720: 49,144 points
+Frame 792: 49,144 points
+Frame 864: 49,152 points
+Frame 936: 49,152 points
+Frame 1008: 49,152 points
+Frame 1081: 49,152 points
+Frame 1153: 49,152 points
+Frame 1225: 49,152 points
+Frame 1297: 49,152 points
+Frame 1369: 49,152 points
+Frame 1441: 49,152 points
+Frame 1513: 49,134 points
+Frame 1585: 49,055 points
+Frame 1657: 49,152 points
+Frame 1729: 49,152 points
+Frame 1801: 49,150 points
+Frame 1873: 49,152 points
+Frame 1945: 49,152 points
+Frame 2017: 49,152 points
+Frame 2090: 49,149 points
+
+==============================
+FORWARD
+==============================
+Points: 1209798
+Min: [-6.03405531 -2.08091695 -6.55085827]
+Max: [5.85106853 3.29479498 5.37571792]
+Size: [11.88512384  5.37571193 11.9265762 ]
+Center: [ 0.05688515  0.423818   -0.19481178]
+
+==============================
+INVERSE
+==============================
+Points: 1209358
+Min: [-5.87332161 -2.79952306 -6.47145076]
+Max: [6.01019051 2.9307908  5.58952219]
+Size: [11.88351211  5.73031386 12.06097296]
+Center: [-0.3114633  -0.09532358 -0.13679046]
+
+Saved:
+D:/VLM-maps/outputs/fusion_forward_test.ply
+D:/VLM-maps/outputs/fusion_inverse_test.ply
+
+CELL 20
+RAW DEPTH STATISTICS
+============================================================
+
+Frame 0
+shape: (256, 192)
+dtype: float32
+min: 1.0
+max: 255.0
+mean: 139.31577
+median: 135.0
+percentiles: [ 11.  40. 102. 135. 182. 235. 250.]
+
+Frame 500
+shape: (256, 192)
+dtype: float32
+min: 3.0
+max: 255.0
+mean: 120.83905
+median: 125.0
+percentiles: [  9.  18.  67. 125. 167. 229. 245.]
+
+Frame 1000
+shape: (256, 192)
+dtype: float32
+min: 3.0
+max: 255.0
+mean: 139.8103
+median: 150.0
+percentiles: [ 17.51  51.    95.   150.   181.   220.   238.  ]
+
+Frame 1500
+shape: (256, 192)
+dtype: float32
+min: 1.0
+max: 255.0
+mean: 133.1252
+median: 132.0
+percentiles: [  8.  33. 102. 132. 172. 224. 242.]
+
+Frame 2090
+shape: (256, 192)
+dtype: float32
+min: 1.0
+max: 255.0
+mean: 165.12839
+median: 187.0
+percentiles: [ 15.  39. 114. 187. 217. 248. 252.]
+
+
+POSE TRANSLATION STATISTICS
+============================================================
+Translation min: [-1.02564287  0.11377442 -1.35338497]
+Translation max: [0.83824354 0.17513077 0.10371996]
+
+Consecutive-frame movement:
+min: 3.3227101109067135e-05
+max: 0.013374991471840283
+mean: 0.002397303782428813
+median: 0.0018811686630009336
+
+Total trajectory displacement:
+1.2557929054996784
+
+CELL 21
+Searching depth scale...
+============================================================
+scale=0.00200   mean NN distance=0.05793
+scale=0.00400   mean NN distance=0.07774
+scale=0.00600   mean NN distance=0.09805
+scale=0.00800   mean NN distance=0.12049
+scale=0.01000   mean NN distance=0.14317
+scale=0.01200   mean NN distance=0.16718
+scale=0.01400   mean NN distance=0.19163
+scale=0.01600   mean NN distance=0.21650
+scale=0.01800   mean NN distance=0.24133
+scale=0.02000   mean NN distance=0.26654
+scale=0.02200   mean NN distance=0.29160
+scale=0.02400   mean NN distance=0.31700
+scale=0.02600   mean NN distance=0.34233
+scale=0.02800   mean NN distance=0.36765
+scale=0.03000   mean NN distance=0.39280
+scale=0.03200   mean NN distance=0.41764
+scale=0.03400   mean NN distance=0.44294
+scale=0.03600   mean NN distance=0.46760
+scale=0.03800   mean NN distance=0.49282
+scale=0.04000   mean NN distance=0.51752
+scale=0.04200   mean NN distance=0.54253
+scale=0.04400   mean NN distance=0.56740
+scale=0.04600   mean NN distance=0.59298
+scale=0.04800   mean NN distance=0.61861
+scale=0.05000   mean NN distance=0.64359
+scale=0.05200   mean NN distance=0.66861
+scale=0.05400   mean NN distance=0.69326
+scale=0.05600   mean NN distance=0.71838
+scale=0.05800   mean NN distance=0.74340
+scale=0.06000   mean NN distance=0.76867
+scale=0.06200   mean NN distance=0.79375
+scale=0.06400   mean NN distance=0.81866
+scale=0.06600   mean NN distance=0.84388
+scale=0.06800   mean NN distance=0.86870
+scale=0.07000   mean NN distance=0.89362
+scale=0.07200   mean NN distance=0.91850
+scale=0.07400   mean NN distance=0.94338
+scale=0.07600   mean NN distance=0.96861
+scale=0.07800   mean NN distance=0.99344
+scale=0.08000   mean NN distance=1.01865
+
+
+============================================================
+BEST CANDIDATE SCALES
+============================================================
+scale=0.002000   score=0.057931
+scale=0.004000   score=0.077736
+scale=0.006000   score=0.098046
+scale=0.008000   score=0.120487
+scale=0.010000   score=0.143167
+scale=0.012000   score=0.167176
+scale=0.014000   score=0.191628
+scale=0.016000   score=0.216500
+scale=0.018000   score=0.241330
+scale=0.020000   score=0.266541
+
+CELL 22
+======================================================================
+DEPTH VALUE / HISTOGRAM DIAGNOSTIC
+======================================================================
+
+FRAME 0
+----------------------------------------------------------------------
+Unique values: 220
+First 30 unique: [ 0.  1.  2.  3.  4.  5.  6.  8.  9. 10. 11. 12. 13. 15. 16. 17. 18. 19.
+ 20. 22. 23. 24. 25. 26. 27. 29. 30. 31. 32. 33.]
+
+Most frequent values:
+value=107   count=   595   percent=  1.21%
+value=104   count=   537   percent=  1.09%
+value=111   count=   525   percent=  1.07%
+value=109   count=   502   percent=  1.02%
+value=123   count=   497   percent=  1.01%
+value=100   count=   486   percent=  0.99%
+value= 96   count=   481   percent=  0.98%
+value=124   count=   478   percent=  0.97%
+value=102   count=   466   percent=  0.95%
+value=128   count=   464   percent=  0.94%
+value=116   count=   457   percent=  0.93%
+value=129   count=   453   percent=  0.92%
+value=115   count=   451   percent=  0.92%
+value=145   count=   450   percent=  0.92%
+value=103   count=   447   percent=  0.91%
+
+Exact 0 count: 24
+Exact 255 count: 8
+Fraction >=250: 0.013834635416666666
+Fraction <=5: 0.0048828125
+
+FRAME 500
+----------------------------------------------------------------------
+Unique values: 217
+First 30 unique: [ 3.  4.  5.  6.  8.  9. 10. 11. 12. 13. 15. 16. 17. 18. 19. 20. 22. 23.
+ 24. 25. 26. 27. 29. 30. 31. 32. 33. 34. 36. 37.]
+
+Most frequent values:
+value=131   count=   486   percent=  0.99%
+value=138   count=   471   percent=  0.96%
+value=137   count=   467   percent=  0.95%
+value=133   count=   440   percent=  0.90%
+value=146   count=   433   percent=  0.88%
+value=145   count=   431   percent=  0.88%
+value=144   count=   427   percent=  0.87%
+value=139   count=   417   percent=  0.85%
+value=135   count=   408   percent=  0.83%
+value=130   count=   406   percent=  0.83%
+value=136   count=   397   percent=  0.81%
+value=132   count=   392   percent=  0.80%
+value=140   count=   392   percent=  0.80%
+value=124   count=   391   percent=  0.80%
+value=147   count=   383   percent=  0.78%
+
+Exact 0 count: 0
+Exact 255 count: 16
+Fraction >=250: 0.0038248697916666665
+Fraction <=5: 0.0033365885416666665
+
+FRAME 1000
+----------------------------------------------------------------------
+Unique values: 216
+First 30 unique: [ 3.  4.  5.  6.  8.  9. 10. 11. 12. 13. 15. 16. 17. 18. 19. 20. 22. 23.
+ 24. 25. 26. 27. 29. 30. 31. 32. 33. 34. 36. 37.]
+
+Most frequent values:
+value=181   count=   531   percent=  1.08%
+value=180   count=   521   percent=  1.06%
+value=174   count=   507   percent=  1.03%
+value=159   count=   505   percent=  1.03%
+value=151   count=   500   percent=  1.02%
+value=173   count=   496   percent=  1.01%
+value=172   count=   494   percent=  1.01%
+value=182   count=   494   percent=  1.01%
+value=183   count=   485   percent=  0.99%
+value=179   count=   474   percent=  0.96%
+value=178   count=   473   percent=  0.96%
+value=187   count=   468   percent=  0.95%
+value=152   count=   465   percent=  0.95%
+value=149   count=   463   percent=  0.94%
+value=153   count=   462   percent=  0.94%
+
+Exact 0 count: 0
+Exact 255 count: 4
+Fraction >=250: 0.0011393229166666667
+Fraction <=5: 0.00030517578125
+
+FRAME 1500
+----------------------------------------------------------------------
+Unique values: 220
+First 30 unique: [ 0.  1.  2.  3.  4.  5.  6.  8.  9. 10. 11. 12. 13. 15. 16. 17. 18. 19.
+ 20. 22. 23. 24. 25. 26. 27. 29. 30. 31. 32. 33.]
+
+Most frequent values:
+value=138   count=   603   percent=  1.23%
+value=123   count=   595   percent=  1.21%
+value=130   count=   564   percent=  1.15%
+value=131   count=   559   percent=  1.14%
+value=124   count=   545   percent=  1.11%
+value=116   count=   545   percent=  1.11%
+value=122   count=   538   percent=  1.09%
+value=125   count=   510   percent=  1.04%
+value=115   count=   503   percent=  1.02%
+value=137   count=   501   percent=  1.02%
+value=117   count=   491   percent=  1.00%
+value=139   count=   483   percent=  0.98%
+value=109   count=   480   percent=  0.98%
+value=129   count=   479   percent=  0.97%
+value=132   count=   468   percent=  0.95%
+
+Exact 0 count: 52
+Exact 255 count: 4
+Fraction >=250: 0.0022989908854166665
+Fraction <=5: 0.008036295572916666
+
+FRAME 2090
+----------------------------------------------------------------------
+Unique values: 220
+First 30 unique: [ 0.  1.  2.  3.  4.  5.  6.  8.  9. 10. 11. 12. 13. 15. 16. 17. 18. 19.
+ 20. 22. 23. 24. 25. 26. 27. 29. 30. 31. 32. 33.]
+
+Most frequent values:
+value=187   count=   730   percent=  1.49%
+value=194   count=   706   percent=  1.44%
+value=180   count=   668   percent=  1.36%
+value=201   count=   616   percent=  1.25%
+value=251   count=   571   percent=  1.16%
+value=252   count=   532   percent=  1.08%
+value=188   count=   522   percent=  1.06%
+value=190   count=   489   percent=  0.99%
+value=208   count=   484   percent=  0.98%
+value=195   count=   477   percent=  0.97%
+value=189   count=   474   percent=  0.96%
+value=192   count=   469   percent=  0.95%
+value=207   count=   467   percent=  0.95%
+value=196   count=   467   percent=  0.95%
+value=193   count=   466   percent=  0.95%
+
+Exact 0 count: 3
+Exact 255 count: 52
+Fraction >=250: 0.035237630208333336
+Fraction <=5: 0.0027058919270833335
+
+CELL 23
+======================================================================
+POSE / CAMERA AXIS DIAGNOSTIC
+======================================================================
+
+FRAME 0
+--------------------------------------------------
+Translation: [ 0.05893505  0.12546577 -0.89114189]
+Quaternion: [ 0.01234622 -0.62671208 -0.01608825  0.77898699]
+
+Rotation matrix:
+[[ 2.13946287e-01  9.59002541e-03 -9.76798351e-01]
+ [-4.05401378e-02  9.99177478e-01  9.30310199e-04]
+ [ 9.76003834e-01  3.94005033e-02  2.14159092e-01]]
+
+Camera axes in world coordinates:
+Camera X: [ 0.21394629 -0.04054014  0.97600383]
+Camera Y: [0.00959003 0.99917748 0.0394005 ]
+Camera Z: [-9.76798351e-01  9.30310199e-04  2.14159092e-01]
+Camera Z direction: [-9.76798351e-01  9.30310199e-04  2.14159092e-01]
+
+FRAME 72
+--------------------------------------------------
+Translation: [ 0.07384905  0.13328061 -0.92251593]
+Quaternion: [-0.00209256 -0.60707903 -0.0347207   0.79387993]
+
+Rotation matrix:
+[[ 0.26049919  0.05766882 -0.96375022]
+ [-0.05258742  0.99758019  0.04547889]
+ [ 0.96404084  0.03883392  0.26290149]]
+
+Camera axes in world coordinates:
+Camera X: [ 0.26049919 -0.05258742  0.96404084]
+Camera Y: [0.05766882 0.99758019 0.03883392]
+Camera Z: [-0.96375022  0.04547889  0.26290149]
+Camera Z direction: [-0.96375022  0.04547889  0.26290149]
+
+FRAME 500
+--------------------------------------------------
+Translation: [-0.80982208  0.15116271 -1.16084838]
+Quaternion: [ 0.00756704  0.9122411   0.06230275 -0.40481746]
+
+Rotation matrix:
+[[-0.67213109  0.06424842 -0.73763944]
+ [-0.03663654  0.99212221  0.11979681]
+ [ 0.73952523  0.10754372 -0.66448235]]
+
+Camera axes in world coordinates:
+Camera X: [-0.67213109 -0.03663654  0.73952523]
+Camera Y: [0.06424842 0.99212221 0.10754372]
+Camera Z: [-0.73763944  0.11979681 -0.66448235]
+Camera Z direction: [-0.73763944  0.11979681 -0.66448235]
+
+FRAME 1000
+--------------------------------------------------
+Translation: [-0.41613424  0.15001856 -0.56831813]
+Quaternion: [-0.0345291   0.88096142  0.05158009  0.46909931]
+
+Rotation matrix:
+[[-0.55750713 -0.10922999  0.8229548 ]
+ [-0.01244525  0.99229447  0.1232753 ]
+ [-0.83007886  0.05848498 -0.55457064]]
+
+Camera axes in world coordinates:
+Camera X: [-0.55750713 -0.01244525 -0.83007886]
+Camera Y: [-0.10922999  0.99229447  0.05848498]
+Camera Z: [ 0.8229548   0.1232753  -0.55457064]
+Camera Z direction: [ 0.8229548   0.1232753  -0.55457064]
+
+FRAME 1500
+--------------------------------------------------
+Translation: [ 0.58303684  0.14566435 -0.03510635]
+Quaternion: [-0.05263992  0.40599194  0.01691917  0.91220242]
+
+Rotation matrix:
+[[ 0.66976855 -0.07361019  0.73891247]
+ [-0.01187535  0.99388556  0.10977463]
+ [-0.74247496 -0.08229844  0.66479914]]
+
+Camera axes in world coordinates:
+Camera X: [ 0.66976855 -0.01187535 -0.74247496]
+Camera Y: [-0.07361019  0.99388556 -0.08229844]
+Camera Z: [0.73891247 0.10977463 0.66479914]
+Camera Z direction: [0.73891247 0.10977463 0.66479914]
+
+FRAME 2090
+--------------------------------------------------
+Translation: [0.83689678 0.13889173 0.09456147]
+Quaternion: [ 0.01609126 -0.24859226 -0.08068334  0.9651078 ]
+
+Rotation matrix:
+[[ 0.86338416  0.14773594 -0.48243329]
+ [-0.16373659  0.98646254  0.00905491]
+ [ 0.47724011  0.07117411  0.87588591]]
+
+Camera axes in world coordinates:
+Camera X: [ 0.86338416 -0.16373659  0.47724011]
+Camera Y: [0.14773594 0.98646254 0.07117411]
+Camera Z: [-0.48243329  0.00905491  0.87588591]
+Camera Z direction: [-0.48243329  0.00905491  0.87588591]
+
+CELL 24
+======================================================================
+FRAME 0 CAMERA-SPACE DEPTH SCALE TEST
+======================================================================
+Valid pixels: 49120
+Raw depth median: 135.0
+Raw depth 25/75%: [102. 182.]
+
+Scale: 0.002
+  Z range: 0.002 to 0.50600004
+  Z median: 0.27
+  X range: -0.09296000480651856 to 0.09191000320017338
+  Y range: -0.18071424290657045 to 0.23687409136533738
+  XYZ size: [0.18487001 0.41758833 0.50400004]
+
+Scale: 0.005
+  Z range: 0.005 to 1.265
+  Z median: 0.675
+  X range: -0.23239999532699585 to 0.22977499783039093
+  Y range: -0.4517855965805054 to 0.5921851625061035
+  XYZ size: [0.46217499 1.04397076 1.25999999]
+
+Scale: 0.01
+  Z range: 0.01 to 2.53
+  Z median: 1.35
+  X range: -0.4647999906539917 to 0.45954999566078186
+  Y range: -0.9035711931610108 to 1.184370325012207
+  XYZ size: [0.92434999 2.08794152 2.51999997]
+
+Scale: 0.02
+  Z range: 0.02 to 5.06
+  Z median: 2.7
+  X range: -0.9295999813079834 to 0.9190999913215637
+  Y range: -1.8071423863220215 to 2.368740650024414
+  XYZ size: [1.84869997 4.17588304 5.03999994]
+
+Scale: 0.03
+  Z range: 0.03 to 7.5899997
+  Z median: 4.0499997
+  X range: -1.394400005340576 to 1.3786499869823456
+  Y range: -2.7107135794830324 to 3.5531112093734745
+  XYZ size: [2.77304999 6.26382479 7.55999968]
+
+CELL 25
+======================================================================
+RAW DEPTH CORRELATION DIAGNOSTIC
+======================================================================
+
+Frame 0
+--------------------------------------------------
+shape: (256, 192)
+dtype: float32
+min: 0.0
+max: 255.0
+mean: 139.24774
+median: 135.0
+
+Frame 72
+--------------------------------------------------
+shape: (256, 192)
+dtype: float32
+min: 0.0
+max: 255.0
+mean: 126.74921
+median: 121.0
+
+======================================================================
+FRAME 0 vs FRAME 72
+======================================================================
+Common valid pixels: 49104
+
+Depth difference:
+mean: -12.50782
+median: -9.0
+std: 22.991888
+min: -57.0
+max: 57.0
+
+Pearson correlation: 0.9255356208080255
+
+Linear fit:
+frame72 ≈ 0.9750548865530686 * frame0 + -9.032845029932279
+
+Correlation of inverse values: 0.896255598442772
+Fraction |difference| < 1: 0.0246
+Fraction |difference| < 2: 0.0697
+Fraction |difference| < 5: 0.1684
+Fraction |difference| < 10: 0.3193
+Fraction |difference| < 20: 0.5428
+
+CELL 26
+======================================================================
+POSE MOTION vs DEPTH MOTION
+======================================================================
+0000 -> 0072 | pose motion=0.03561 | median depth change=18.00 | correlation=0.9256
+0072 -> 0144 | pose motion=0.13524 | median depth change=14.00 | correlation=0.9404
+0144 -> 0216 | pose motion=0.37973 | median depth change=27.00 | correlation=0.8090
+0500 -> 0572 | pose motion=0.17457 | median depth change=29.00 | correlation=0.7658
+1000 -> 1072 | pose motion=0.09655 | median depth change=38.00 | correlation=0.8258
+1500 -> 1572 | pose motion=0.07540 | median depth change=20.00 | correlation=0.7784
+2000 -> 2072 | pose motion=0.05813 | median depth change=12.00 | correlation=0.9512
+
+CELL 27
+======================================================================
+FORWARD vs INVERSE POSE TEST
+======================================================================
+
+======================================================================
+FORWARD
+======================================================================
+Points: 1051370
+Min XYZ:
+[-6.03405531 -2.08091695 -6.55085827]
+Max XYZ:
+[5.85106853 3.29479498 5.37571792]
+Bounding box:
+[11.88512384  5.37571193 11.9265762 ]
+Center:
+[ 0.04405293  0.43576457 -0.18414949]
+
+======================================================================
+INVERSE
+======================================================================
+Points: 1049037
+Min XYZ:
+[-5.87332161 -2.79952306 -6.47145076]
+Max XYZ:
+[6.01019051 2.9307908  5.58952219]
+Bounding box:
+[11.88351211  5.73031386 12.06097296]
+Center:
+[-0.29407672 -0.08946463 -0.13506813]
+
+Saved:
+D:/VLM-maps/outputs/test_forward_002.ply
+D:/VLM-maps/outputs/test_inverse_002.ply
+
+CELL 28
+Jupyter environment detected. Enabling Open3D WebVisualizer.
+[Open3D INFO] WebRTC GUI backend enabled.
+[Open3D INFO] WebRTCWindowSystem: HTTP handshake server disabled.
+Opening FORWARD...
+[PointCloud with 1051370 points.]
+Opening INVERSE...
+[PointCloud with 1049037 points.]
+
+CELL 29
+<Figure size 1600x700 with 2 Axes>
+CELL 30
+Files around dataset:
+
+ D:/VLM-maps/dataset/content/vlmaps_dataset/my_custom_scene
+   poses.txt
+
+ D:/VLM-maps/dataset/content/vlmaps_dataset/my_custom_scene\depth
+   000000.npy
+   000001.npy
+   000002.npy
+   000003.npy
+   000004.npy
+   000005.npy
+   000006.npy
+   000007.npy
+   000008.npy
+   000009.npy
+   000010.npy
+   000011.npy
+   000012.npy
+   000013.npy
+   000014.npy
+   000015.npy
+   000016.npy
+   000017.npy
+   000018.npy
+   000019.npy
+   000020.npy
+   000021.npy
+   000022.npy
+   000023.npy
+   000024.npy
+   000025.npy
+   000026.npy
+   000027.npy
+   000028.npy
+   000029.npy
+
+ D:/VLM-maps/dataset/content/vlmaps_dataset/my_custom_scene\rgb
+   000000.png
+   000001.png
+   000002.png
+   000003.png
+   000004.png
+   000005.png
+   000006.png
+   000007.png
+   000008.png
+   000009.png
+   000010.png
+   000011.png
+   000012.png
+   000013.png
+   000014.png
+   000015.png
+   000016.png
+   000017.png
+   000018.png
+   000019.png
+   000020.png
+   000021.png
+   000022.png
+   000023.png
+   000024.png
+   000025.png
+   000026.png
+   000027.png
+   000028.png
+   000029.png
+
+CELL 31
+======================================================================
+SEARCHING DATASET FILES
+======================================================================
+D:/VLM-maps/dataset/content\vlmaps_dataset\my_custom_scene\poses.txt
+
+CELL 32
+<Figure size 1400x600 with 3 Axes>
+CELL 33
+<Figure size 1200x800 with 1 Axes>
+CELL 34
+Searching for files that might describe depth / camera parameters...
+
+D:/VLM-maps/dataset/content/vlmaps_dataset\my_custom_scene\poses.txt
+
+CELL 35
+shape: (256, 192)
+dtype: float32
+
+Raw statistics:
+min: 0.0
+max: 255.0
+mean: 139.24774
+median: 135.0
+
+Unique-value information:
+number of unique values: 220
+first 50: [ 0.  1.  2.  3.  4.  5.  6.  8.  9. 10. 11. 12. 13. 15. 16. 17. 18. 19.
+ 20. 22. 23. 24. 25. 26. 27. 29. 30. 31. 32. 33. 34. 36. 37. 38. 39. 40.
+ 41. 43. 44. 45. 46. 47. 48. 50. 51. 52. 53. 54. 55. 57.]
+
+Fraction exactly integer-valued: 1.0
+
+Possible interpretations of median depth:
+raw: 135.0
+raw / 255: 0.5294118
+raw / 100: 1.35
+raw / 1000: 0.135
+
+CELL 36
+======================================================================
+ALL NON-IMAGE/NON-DEPTH FILES
+======================================================================
+D:/VLM-maps/dataset\content\vlmaps_dataset\my_custom_scene\poses.txt
+
+CELL 37
+======================================================================
+DIRECTORY STRUCTURE
+======================================================================
+dataset/
+  content/
+    vlmaps_dataset/
+      my_custom_scene/
+        poses.txt
+        depth/
+          000000.npy
+          000001.npy
+          000002.npy
+          000003.npy
+          000004.npy
+          000005.npy
+          000006.npy
+          000007.npy
+          000008.npy
+          000009.npy
+          000010.npy
+          000011.npy
+          000012.npy
+          000013.npy
+          000014.npy
+          000015.npy
+          000016.npy
+          000017.npy
+          000018.npy
+          000019.npy
+          ... (2091 files)
+        rgb/
+          000000.png
+          000001.png
+          000002.png
+          000003.png
+          000004.png
+          000005.png
+          000006.png
+          000007.png
+          000008.png
+          000009.png
+          000010.png
+          000011.png
+          000012.png
+          000013.png
+          000014.png
+          000015.png
+          000016.png
+          000017.png
+          000018.png
+          000019.png
+          ... (2091 files)
+
+CELL 38
+======================================================================
+DEPTH vs INVERSE-DEPTH FRAME CONSISTENCY
+======================================================================
+0000 -> 0072 | raw corr = 0.9256 | inverse corr = 0.8963
+0072 -> 0144 | raw corr = 0.9404 | inverse corr = 0.9640
+0144 -> 0216 | raw corr = 0.8090 | inverse corr = 0.6971
+0500 -> 0572 | raw corr = 0.7658 | inverse corr = 0.4769
+1000 -> 1072 | raw corr = 0.8258 | inverse corr = 0.3132
+1500 -> 1572 | raw corr = 0.7784 | inverse corr = 0.1164
+2000 -> 2072 | raw corr = 0.9512 | inverse corr = 0.9084
+
+CELL 39
+===========================================================================
+DEPTH VALUE DISTRIBUTION BY FRAME
+===========================================================================
+
+Frame 0000
+P01  P05  P10  P25  P50  P75  P90  P95  P99
+  11.0   40.0   65.0  102.0  135.0  182.0  222.0  235.0  250.0
+
+Frame 0072
+P01  P05  P10  P25  P50  P75  P90  P95  P99
+  15.0   31.0   45.0   83.0  121.0  173.0  216.0  232.0  249.0
+
+Frame 0144
+P01  P05  P10  P25  P50  P75  P90  P95  P99
+  16.0   46.0   59.0   94.0  129.0  175.0  214.0  227.8  244.0
+
+Frame 0216
+P01  P05  P10  P25  P50  P75  P90  P95  P99
+  16.0   38.0   53.0  101.0  154.0  193.0  222.0  232.0  245.0
+
+Frame 0500
+P01  P05  P10  P25  P50  P75  P90  P95  P99
+   9.0   18.0   29.0   67.0  125.0  167.0  211.0  229.0  245.0
+
+Frame 1000
+P01  P05  P10  P25  P50  P75  P90  P95  P99
+  17.5   51.0   61.0   95.0  150.0  181.0  206.0  220.0  238.0
+
+Frame 1500
+P01  P05  P10  P25  P50  P75  P90  P95  P99
+   8.0   33.0   55.0  102.0  132.0  172.0  208.0  224.0  242.0
+
+Frame 2000
+P01  P05  P10  P25  P50  P75  P90  P95  P99
+  20.0   45.0   68.0  122.0  182.0  211.0  231.0  238.0  248.0
+
+Frame 2090
+P01  P05  P10  P25  P50  P75  P90  P95  P99
+  15.0   39.0   59.0  114.0  187.0  217.0  239.0  248.0  252.0
+
+CELL 40
+Number of valid: 49128
+
+Divisor 255:
+  min    = 0.0039
+  median = 0.5294
+  max    = 1.0000
+
+Divisor 254:
+  min    = 0.0039
+  median = 0.5315
+  max    = 1.0039
+
+Divisor 256:
+  min    = 0.0039
+  median = 0.5273
+  max    = 0.9961
+
+CELL 41
+============================================================
+FRAME 0
+RGB:
+  size: (720, 960)
+  mode: RGB
+  format: PNG
+Depth:
+  shape: (256, 192)
+  dtype: float32
+RGB metadata:
+{}
+============================================================
+FRAME 500
+RGB:
+  size: (720, 960)
+  mode: RGB
+  format: PNG
+Depth:
+  shape: (256, 192)
+  dtype: float32
+RGB metadata:
+{}
+============================================================
+FRAME 1000
+RGB:
+  size: (720, 960)
+  mode: RGB
+  format: PNG
+Depth:
+  shape: (256, 192)
+  dtype: float32
+RGB metadata:
+{}
+============================================================
+FRAME 1500
+RGB:
+  size: (720, 960)
+  mode: RGB
+  format: PNG
+Depth:
+  shape: (256, 192)
+  dtype: float32
+RGB metadata:
+{}
+============================================================
+FRAME 2090
+RGB:
+  size: (720, 960)
+  mode: RGB
+  format: PNG
+Depth:
+  shape: (256, 192)
+  dtype: float32
+RGB metadata:
+{}
+
+CELL 42
+============================================================
+POSE TRAJECTORY
+First 5 poses:
+[[ 0.05893505  0.12546577 -0.89114189  0.01234622 -0.62671208 -0.01608825
+   0.77898699]
+ [ 0.05925108  0.12547487 -0.89158452  0.01210961 -0.62662059 -0.01603638
+   0.77906531]
+ [ 0.05970709  0.12528354 -0.89262092  0.0115514  -0.62671965 -0.01534706
+   0.77900809]
+ [ 0.05965707  0.12457903 -0.89288676  0.01127639 -0.62677807 -0.01498674
+   0.77897215]
+ [ 0.0598232   0.12417594 -0.8932665   0.01089376 -0.62653327 -0.01492854
+   0.77917546]]
+
+Last 5 poses:
+[[ 0.83745271  0.13912851  0.09561505  0.01638321 -0.24389659 -0.08289555
+   0.96611309]
+ [ 0.83748835  0.13902174  0.09573393  0.0162878  -0.24523738 -0.08246917
+   0.96581173]
+ [ 0.83728111  0.13930392  0.09488004  0.01606539 -0.24618082 -0.08236428
+   0.96558422]
+ [ 0.83719671  0.13922584  0.09476586  0.0160397  -0.24675238 -0.08198309
+   0.96547127]
+ [ 0.83689678  0.13889173  0.09456147  0.01609126 -0.24859226 -0.08068334
+   0.9651078 ]]
+
+Translation:
+min: [-1.02564287  0.11377442 -1.35338497]
+max: [0.83824354 0.17513077 0.10371996]
+
+Rotation determinant:
+min: 0.9999999999999986
+max: 1.0000000000000013
+
+Rotation matrix frame 0:
+[[ 2.13946287e-01  9.59002541e-03 -9.76798351e-01]
+ [-4.05401378e-02  9.99177478e-01  9.30310199e-04]
+ [ 9.76003834e-01  3.94005033e-02  2.14159092e-01]]
+
+CELL 43
+======================================================================
+POSE DIRECTION vs MOVEMENT
+======================================================================
+0000->0072 | movement=0.0356 | forward·movement=-0.6118
+0072->0144 | movement=0.1352 | forward·movement=0.9151
+0144->0216 | movement=0.3797 | forward·movement=0.9879
+0500->0572 | movement=0.1746 | forward·movement=0.9120
+1000->1072 | movement=0.0965 | forward·movement=0.7923
+1500->1572 | movement=0.0754 | forward·movement=0.4177
+2000->2072 | movement=0.0581 | forward·movement=0.2840
+
+CELL 44
+
+Frame 0
+RGB:
+  shape: (960, 720, 3)
+  dtype: uint8
+Depth:
+  shape: (256, 192)
+  dtype: float32
+
+Frame 72
+RGB:
+  shape: (960, 720, 3)
+  dtype: uint8
+Depth:
+  shape: (256, 192)
+  dtype: float32
+
+Frame 500
+RGB:
+  shape: (960, 720, 3)
+  dtype: uint8
+Depth:
+  shape: (256, 192)
+  dtype: float32
+
+Frame 1000
+RGB:
+  shape: (960, 720, 3)
+  dtype: uint8
+Depth:
+  shape: (256, 192)
+  dtype: float32
+
+Frame 2090
+RGB:
+  shape: (960, 720, 3)
+  dtype: uint8
+Depth:
+  shape: (256, 192)
+  dtype: float32
+
+============================================================
+RGB FRAME 0
+============================================================
+shape: (960, 720, 3)
+min: 0
+max: 255
+mean: 143.4656148726852
+
+============================================================
+DEPTH FRAME 0
+============================================================
+shape: (256, 192)
+min: 0.0
+max: 255.0
+
+============================================================
+SEARCHING FOR INTRINSICS / CAMERA FILES
+============================================================
+Found: 0
+
+CELL 45
+<Figure size 1600x800 with 8 Axes>
+CELL 46
+
+Frame 0
+Center: 209.795
+Top: 49.60164
+Bottom: 132.23941
+Left: 82.24811
+Right: 103.004166
+
+Frame 500
+Center: 210.7275
+Top: 42.76684
+Bottom: 31.642708
+Left: 105.19701
+Right: 86.85716
+
+Frame 1000
+Center: 187.865
+Top: 131.10226
+Bottom: 125.17205
+Left: 143.65195
+Right: 60.752995
+
+Frame 1500
+Center: 198.8325
+Top: 99.66511
+Bottom: 58.831814
+Left: 114.90404
+Right: 96.5038
+
+Frame 2090
+Center: 233.5825
+Top: 65.40872
+Bottom: 163.292
+Left: 163.744
+Right: 68.743256
+
+CELL 47
+RGB frames: 2091
+Depth frames: 2091
+Pose shape: (2091, 7)
+First pose: [ 0.05893505  0.12546577 -0.89114189  0.01234622 -0.62671208 -0.01608825
+  0.77898699]
+Last pose: [ 0.83689678  0.13889173  0.09456147  0.01609126 -0.24859226 -0.08068334
+  0.9651078 ]
+
+Image sizes:
+RGB: (960, 720)
+Depth: (256, 192)
+
+Provisional depth intrinsics:
+fx, fy, cx, cy = 200.0 200.0 96.0 127.712
+
+Raw depth percentiles:
+[ 12.  31.  94. 146. 193. 231. 245.]
+
+Depth-unit decision:
+The notebook shows raw depth values from approximately 0 to 255.
+The default below interprets them as normalized 8-bit-like depth and
+maps 255 units to 5 metres.
+
+This is only a provisional conversion. If you know the real sensor
+scale, replace DEPTH_MAX_RAW and ROOM_MAX_METERS below.
+
+Using provisional depth scale:
+raw depth / 51.0 = metres
+
+Frames selected: 210
+Frame range: 0 to 2090
+Processed frame 0000 | points: 48,840 | camera: [ 0.05893505  0.12546577 -0.89114189]
+Processed frame 0200 | points: 48,971 | camera: [-0.35580382  0.15011652 -0.94076014]
+Processed frame 0400 | points: 48,796 | camera: [-0.66846758  0.15119903 -0.97816992]
+Processed frame 0600 | points: 48,848 | camera: [-0.89080703  0.14973596 -1.35309875]
+Processed frame 0800 | points: 49,013 | camera: [-0.96077818  0.14324503 -0.89944601]
+Processed frame 1000 | points: 49,124 | camera: [-0.41613424  0.15001856 -0.56831813]
+Processed frame 1200 | points: 49,112 | camera: [ 0.1377731   0.17436321 -0.41734281]
+Processed frame 1400 | points: 49,118 | camera: [ 0.42263082  0.15330759 -0.13173066]
+Processed frame 1600 | points: 48,423 | camera: [0.58084452 0.14623751 0.01011013]
+Processed frame 1800 | points: 48,976 | camera: [0.78250003 0.15997197 0.04737145]
+Processed frame 2000 | points: 49,064 | camera: [0.78917134 0.14458071 0.05390782]
+
+Raw fused points: 10,280,513
+World min: [-6.04868646 -2.07814321 -6.59972108]
+World max: [5.81007456 3.26535204 5.33459864]
+World range: [11.85876102  5.34349525 11.93431972]
+
+After robust spatial filtering:
+Points: 9,976,065
+Min: [-5.26271717 -1.48856194 -5.6741181 ]
+Max: [4.88806401 2.55745049 4.73172951]
+
+Final point cloud:
+Points: 5,441,387
+Saved: D:/VLM-maps/outputs/reconstruction_outputs\fused_world_pointcloud_2cm.ply
+<Figure size 800x600 with 1 Axes><Figure size 1000x800 with 1 Axes>Top-down image saved: D:/VLM-maps/outputs/reconstruction_outputs\provisional_topdown.png
+Metadata saved: D:/VLM-maps/outputs/reconstruction_outputs\reconstruction_metadata.json
+
+CELL 48
+
+CELL 49
+
+CELL 50
+Python: 3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]
+Open3D: 0.20.0
+
+CELL 51
+Open3D: 0.20.0
+SciPy: 1.18.0
+
+CELL 52
+DATASET exists: True
+RGB exists: True
+DEPTH exists: True
+POSES exists: True
+Dataset contents:
+['depth', 'poses.txt', 'rgb']
+
+CELL 53
+
+CELL 54
+Dataset path: D:/VLM-maps/dataset/content/vlmaps_dataset/my_custom_scene
+RGB directory: D:/VLM-maps/dataset/content/vlmaps_dataset/my_custom_scene\rgb
+Depth directory: D:/VLM-maps/dataset/content/vlmaps_dataset/my_custom_scene\depth
+Poses file: D:/VLM-maps/dataset/content/vlmaps_dataset/my_custom_scene\poses.txt
+
+RGB frames: 2091
+Depth frames: 2091
+Pose shape: (2091, 7)
+First pose: [ 0.05893505  0.12546577 -0.89114189  0.01234622 -0.62671208 -0.01608825
+  0.77898699]
+Last pose: [ 0.83689678  0.13889173  0.09456147  0.01609126 -0.24859226 -0.08068334
+  0.9651078 ]
+
+Image sizes:
+RGB: (960, 720)
+Depth: (256, 192)
+
+Provisional depth intrinsics:
+fx: 200.0
+fy: 200.0
+cx: 96.0
+cy: 127.712
+
+Raw depth percentiles:
+[ 12.  31.  94. 146. 193. 231. 245.]
+
+Provisional depth conversion:
+raw depth / 51.0 = metres
+
+Frames selected: 210
+Frame range: 0 to 2090
+Processed frame 0000 | points: 48,840 | camera: [ 0.05893505  0.12546577 -0.89114189]
+Processed frame 0200 | points: 48,971 | camera: [-0.35580382  0.15011652 -0.94076014]
+Processed frame 0400 | points: 48,796 | camera: [-0.66846758  0.15119903 -0.97816992]
+Processed frame 0600 | points: 48,848 | camera: [-0.89080703  0.14973596 -1.35309875]
+Processed frame 0800 | points: 49,013 | camera: [-0.96077818  0.14324503 -0.89944601]
+Processed frame 1000 | points: 49,124 | camera: [-0.41613424  0.15001856 -0.56831813]
+Processed frame 1200 | points: 49,112 | camera: [ 0.1377731   0.17436321 -0.41734281]
+Processed frame 1400 | points: 49,118 | camera: [ 0.42263082  0.15330759 -0.13173066]
+Processed frame 1600 | points: 48,423 | camera: [0.58084452 0.14623751 0.01011013]
+Processed frame 1800 | points: 48,976 | camera: [0.78250003 0.15997197 0.04737145]
+Processed frame 2000 | points: 49,064 | camera: [0.78917134 0.14458071 0.05390782]
+
+Raw fused points:
+10,280,513
+World minimum:
+[-6.04868646 -2.07814321 -6.59972108]
+World maximum:
+[5.81007456 3.26535204 5.33459864]
+World range:
+[11.85876102  5.34349525 11.93431972]
+
+After robust spatial filtering:
+Points: 9,976,065
+Minimum: [-5.26271717 -1.48856194 -5.6741181 ]
+Maximum: [4.88806401 2.55745049 4.73172951]
+
+Final point cloud:
+Points: 5,441,387
+Saved: D:/VLM-maps/outputs/reconstruction_outputs\fused_world_pointcloud_2cm.ply
+<Figure size 800x600 with 1 Axes><Figure size 1000x800 with 1 Axes>Top-down image saved: D:/VLM-maps/outputs/reconstruction_outputs\provisional_topdown.png
+Metadata saved: D:/VLM-maps/outputs/reconstruction_outputs\reconstruction_metadata.json
+
+CELL 55
+Pose translation min:
+[-1.02564287  0.11377442 -1.35338497]
+Pose translation max:
+[0.83824354 0.17513077 0.10371996]
+Pose translation range:
+[1.86388642 0.06135635 1.45710494]
+<Figure size 800x600 with 1 Axes><Figure size 1800x500 with 3 Axes>Point-cloud Y percentiles:
+[-1.34173039 -1.07484556 -0.88120514 -0.41081772  0.42872797  1.19060349
+  1.77894255  2.06262708  2.37855552]
+<Figure size 1000x500 with 1 Axes><Figure size 800x600 with 1 Axes>
+CELL 56
+<Figure size 2000x600 with 3 Axes>
+CELL 57
+<Figure size 1000x800 with 1 Axes>
+CELL 58
+
+Frame 0
+min: 1.0
+max: 255.0
+median: 135.0
+unique count: 220
+unique first: [ 0.  1.  2.  3.  4.  5.  6.  8.  9. 10.]
+unique last: [244. 245. 246. 248. 249. 250. 251. 252. 253. 255.]
+
+Frame 500
+min: 3.0
+max: 255.0
+median: 125.0
+unique count: 217
+unique first: [ 3.  4.  5.  6.  8.  9. 10. 11. 12. 13.]
+unique last: [244. 245. 246. 248. 249. 250. 251. 252. 253. 255.]
+
+Frame 1000
+min: 3.0
+max: 255.0
+median: 150.0
+unique count: 216
+unique first: [ 3.  4.  5.  6.  8.  9. 10. 11. 12. 13.]
+unique last: [243. 244. 245. 246. 248. 249. 250. 251. 253. 255.]
+
+Frame 1500
+min: 1.0
+max: 255.0
+median: 132.0
+unique count: 220
+unique first: [ 0.  1.  2.  3.  4.  5.  6.  8.  9. 10.]
+unique last: [244. 245. 246. 248. 249. 250. 251. 252. 253. 255.]
+
+Frame 2090
+min: 1.0
+max: 255.0
+median: 187.0
+unique count: 220
+unique first: [ 0.  1.  2.  3.  4.  5.  6.  8.  9. 10.]
+unique last: [244. 245. 246. 248. 249. 250. 251. 252. 253. 255.]
+
+CELL 59
+<Figure size 2000x600 with 3 Axes>
+CELL 60
+<Figure size 1400x500 with 3 Axes>
+CELL 61
+top_left median = 171.0 mean = 171.8413543701172
+top_center median = 164.0 mean = 165.90496826171875
+top_right median = 68.0 mean = 70.28897094726562
+center median = 182.0 mean = 184.82977294921875
+bottom_left median = 157.0 mean = 138.19876098632812
+bottom_center median = 174.0 mean = 172.72511291503906
+bottom_right median = 90.0 mean = 92.3001480102539
+
+CELL 62
+<Figure size 2000x600 with 3 Axes>
+CELL 63
+Frame 0:
+all values integer-like: True
+fractional values: 0
+unique values: 220
+range: 0.0 255.0
+Frame 1000:
+all values integer-like: True
+fractional values: 0
+unique values: 216
+range: 3.0 255.0
+Frame 2090:
+all values integer-like: True
+fractional values: 0
+unique values: 220
+range: 0.0 255.0
+
+CELL 64
+Map width: 395
+Map height: 374
+Map physical width: 7.8638864159584045
+Map physical height: 7.457104936242104
+Processed frame 0000
+Processed frame 0250
+Processed frame 0500
+Processed frame 0750
+Processed frame 1000
+Processed frame 1250
+Processed frame 1500
+Processed frame 1750
+Processed frame 2000
+<Figure size 2000x700 with 3 Axes>Saved:
+D:/VLM-maps/outputs/reconstruction_outputs\qualitative_topdown_occupancy.png
+D:/VLM-maps/outputs/reconstruction_outputs\qualitative_object_map.png
+D:/VLM-maps/outputs/reconstruction_outputs\camera_position_rgb_map.png
+
+CELL 65
+WARNING user config directory 'D:\VLM-maps\.yolo\Ultralytics' is not writable, using 'D:\VLM-maps\Ultralytics'. Set YOLO_CONFIG_DIR to override.
+Creating new Ultralytics Settings v0.0.8 file  
+View Ultralytics Settings with 'yolo settings' or at 'D:\VLM-maps\Ultralytics\settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+Detection frame 0000
+Detection frame 0200
+Detection frame 0400
+Detection frame 0600
+Detection frame 0800
+Detection frame 1000
+Detection frame 1200
+Detection frame 1400
+Detection frame 1600
+Detection frame 1800
+Detection frame 2000
+Detections: 145
+Saved: D:/VLM-maps/outputs/reconstruction_outputs\object_detections.csv
+
+CELL 66
+
+CELL 67
+Ultralytics version: 8.4.174
+
+CELL 68
+Loaded detections: 145
+Stable object clusters: 7
+  class_name  cluster_id   world_x   world_z  observations  mean_confidence
+0        bed           0 -1.532187 -1.609911            38         0.731463
+1      chair           0  0.944280 -0.131179             5         0.555723
+2      chair           1  1.184765  0.838680            40         0.858254
+3      couch           0 -1.096978 -1.976346            40         0.841071
+4      couch           1 -0.483824 -1.237068             6         0.774475
+5      couch           2  1.494226  0.252952             6         0.691229
+6     person           0 -0.712671 -0.570629             3         0.496808
+Saved: D:/VLM-maps/outputs/reconstruction_outputs\clustered_topdown_objects.csv
+
+CELL 69
+<Figure size 1200x1000 with 1 Axes>Saved: D:/VLM-maps/outputs/reconstruction_outputs\stable_topdown_object_map.png
+
+CELL 70
+class_name
+couch           53
+chair           47
+bed             38
+person           3
+refrigerator     2
+book             2
+Name: count, dtype: int64
+
+CELL 71
+class_name
+couch    49
+chair    41
+bed      35
+Name: count, dtype: int64
+
+CELL 72
+  class_name  cluster_id   world_x   world_z  observations  mean_confidence
+0        bed           0 -1.532187 -1.609911            38         0.731463
+2      chair           1  1.184765  0.838680            40         0.858254
+3      couch           0 -1.096978 -1.976346            40         0.841071
+Saved: D:/VLM-maps/outputs/reconstruction_outputs\reliable_static_objects.csv
+
+CELL 73
+<Figure size 1200x1000 with 1 Axes>Saved: D:/VLM-maps/outputs/reconstruction_outputs\reliable_static_object_map.png
+
+CELL 74
+Testing eps: 0.2
+bed clusters: 1
+book clusters: 0
+chair clusters: 2
+couch clusters: 3
+person clusters: 1
+refrigerator clusters: 0
+Testing eps: 0.3
+bed clusters: 1
+book clusters: 0
+chair clusters: 2
+couch clusters: 3
+person clusters: 1
+refrigerator clusters: 0
+Testing eps: 0.4
+bed clusters: 1
+book clusters: 0
+chair clusters: 1
+couch clusters: 3
+person clusters: 1
+refrigerator clusters: 0
+Testing eps: 0.5
+bed clusters: 1
+book clusters: 0
+chair clusters: 1
+couch clusters: 3
+person clusters: 1
+refrigerator clusters: 0
+
+CELL 75
+Current point count: 5,441,387
+complete_room_pointcloud_2cm.ply | exists: True | size MB: 134.86
+complete_room_pointcloud_5cm_online.ply | exists: True | size MB: 23.46
+complete_room_pointcloud_5cm.xyz | exists: True | size MB: 35.45
+
+2 cm points: 5,237,484
+5 cm points: 911,180
+
+CELL 76
+Processing frames: 419
+Processed frame 0000
+Processed frame 0250
+Processed frame 0500
+Processed frame 0750
+Processed frame 1000
+Processed frame 1250
+Processed frame 1500
+Processed frame 1750
+Processed frame 2000
+Raw qualitative points: 5,147,924
+After outlier filtering: 4,994,369
+
+File: D:/VLM-maps/outputs/reconstruction_outputs\qualitative_room_pointcloud_online_5cm.ply
+Exists: True
+Size MB: 6.08
+Points: 235,987
+
+File: D:/VLM-maps/outputs/reconstruction_outputs\qualitative_room_pointcloud_detail_2cm.ply
+Exists: True
+Size MB: 50.9
+Points: 1,976,603
+
+CELL 77
+Processing frames: 419
+Processed frame 0000
+Processed frame 0250
+Processed frame 0500
+Processed frame 0750
+Processed frame 1000
+Processed frame 1250
+Processed frame 1500
+Processed frame 1750
+Processed frame 2000
+Raw qualitative points: 5,147,924
+After outlier filtering: 4,994,369
+
+File: D:/VLM-maps/outputs/reconstruction_outputs\qualitative_room_pointcloud_online_5cm.ply
+Exists: True
+Size MB: 6.08
+Points: 235,987
+
+File: D:/VLM-maps/outputs/reconstruction_outputs\qualitative_room_pointcloud_detail_2cm.ply
+Exists: True
+Size MB: 50.9
+Points: 1,976,603
+
+CELL 78
+
+CELL 79
+RGB: 2091
+Depth: 2091
+Poses: (2091, 7)
+RGB size: 960 720
+Depth size: 256 192
+Provisional intrinsics: 200.0 200.0 96.0 127.712
+Map: 395 374
+Processed frame 0000
+Processed frame 0250
+Processed frame 0500
+Processed frame 0750
+Processed frame 1000
+Processed frame 1250
+Processed frame 1500
+Processed frame 1750
+Processed frame 2000
+PLY saved: D:/VLM-maps/outputs/final_vlmaps_outputs\qualitative_room_vlmaps_style.ply
+PLY points: 222637
+Occupancy saved: D:/VLM-maps/outputs/final_vlmaps_outputs\qualitative_topdown_final.png
+MP4 saved: D:/VLM-maps/outputs/final_vlmaps_outputs\vlmaps_style_room_animation.mp4
+Metadata saved: D:/VLM-maps/outputs/final_vlmaps_outputs\final_qualitative_map_metadata.json

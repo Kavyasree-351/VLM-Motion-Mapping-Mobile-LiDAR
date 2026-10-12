@@ -1,0 +1,186 @@
+[
+  {
+    "query": "what could be moved?",
+    "intent": "movability",
+    "semantic": "",
+    "matches": [
+      {
+        "id": "armchair_0",
+        "class_name": "armchair",
+        "motion_class": "movable_not_observed_moving",
+        "position": [
+          -0.3616387051624138,
+          -1.463634000108618
+        ],
+        "motion_reliability_score": 0.0,
+        "reobservation_priority": 0.562571249204158
+      },
+      {
+        "id": "beanbag_0",
+        "class_name": "beanbag",
+        "motion_class": "movable_not_observed_moving",
+        "position": [
+          1.304402041923629,
+          0.0749086067027325
+        ],
+        "motion_reliability_score": 0.0,
+        "reobservation_priority": 0.4697347079115582
+      },
+      {
+        "id": "sofa_0",
+        "class_name": "sofa",
+        "motion_class": "movable_not_observed_moving",
+        "position": [
+          -0.1715363144694699,
+          0.7120270769493362
+        ],
+        "motion_reliability_score": 0.0,
+        "reobservation_priority": 0.8063583000082876
+      }
+    ],
+    "scope": "recorded episode only",
+    "status": "matches"
+  },
+  {
+    "query": "which beanbag could be moved?",
+    "intent": "movability",
+    "semantic": "beanbag",
+    "matches": [
+      {
+        "id": "armchair_0",
+        "class_name": "armchair",
+        "motion_class": "movable_not_observed_moving",
+        "position": [
+          -0.3616387051624138,
+          -1.463634000108618
+        ],
+        "motion_reliability_score": 0.0,
+        "reobservation_priority": 0.562571249204158
+      },
+      {
+        "id": "beanbag_0",
+        "class_name": "beanbag",
+        "motion_class": "movable_not_observed_moving",
+        "position": [
+          1.304402041923629,
+          0.0749086067027325
+        ],
+        "motion_reliability_score": 0.0,
+        "reobservation_priority": 0.4697347079115582
+      },
+      {
+        "id": "sofa_0",
+        "class_name": "sofa",
+        "motion_class": "movable_not_observed_moving",
+        "position": [
+          -0.1715363144694699,
+          0.7120270769493362
+        ],
+        "motion_reliability_score": 0.0,
+        "reobservation_priority": 0.8063583000082876
+      }
+    ],
+    "scope": "recorded episode only",
+    "status": "matches"
+  },
+  {
+    "query": "what was observed moving?",
+    "intent": "observed_motion",
+    "semantic": "",
+    "matches": [],
+    "scope": "recorded episode only",
+    "status": "no_supported_match"
+  },
+  {
+    "query": "what was not moving?",
+    "intent": "observed_static",
+    "semantic": "",
+    "matches": [
+      {
+        "id": "armchair_0",
+        "class_name": "armchair",
+        "motion_class": "movable_not_observed_moving",
+        "position": [
+          -0.3616387051624138,
+          -1.463634000108618
+        ],
+        "motion_reliability_score": 0.0,
+        "reobservation_priority": 0.562571249204158
+      },
+      {
+        "id": "beanbag_0",
+        "class_name": "beanbag",
+        "motion_class": "movable_not_observed_moving",
+        "position": [
+          1.304402041923629,
+          0.0749086067027325
+        ],
+        "motion_reliability_score": 0.0,
+        "reobservation_priority": 0.4697347079115582
+      },
+      {
+        "id": "sofa_0",
+        "class_name": "sofa",
+        "motion_class": "movable_not_observed_moving",
+        "position": [
+          -0.1715363144694699,
+          0.7120270769493362
+        ],
+        "motion_reliability_score": 0.0,
+        "reobservation_priority": 0.8063583000082876
+      }
+    ],
+    "scope": "recorded episode only",
+    "status": "matches"
+  },
+  {
+    "query": "what is moving now?",
+    "intent": "needs_fresh_observation",
+    "semantic": "",
+    "matches": [],
+    "scope": "recorded episode only",
+    "status": "needs_fresh_observation"
+  },
+  {
+    "query": "what needs another observation?",
+    "intent": "reobserve",
+    "semantic": "",
+    "matches": [
+      {
+        "id": "sofa_0",
+        "class_name": "sofa",
+        "motion_class": "movable_not_observed_moving",
+        "position": [
+          -0.1715363144694699,
+          0.7120270769493362
+        ],
+        "motion_reliability_score": 0.0,
+        "reobservation_priority": 0.8063583000082876
+      },
+      {
+        "id": "armchair_0",
+        "class_name": "armchair",
+        "motion_class": "movable_not_observed_moving",
+        "position": [
+          -0.3616387051624138,
+          -1.463634000108618
+        ],
+        "motion_reliability_score": 0.0,
+        "reobservation_priority": 0.562571249204158
+      },
+      {
+        "id": "beanbag_0",
+        "class_name": "beanbag",
+        "motion_class": "movable_not_observed_moving",
+        "position": [
+          1.304402041923629,
+          0.0749086067027325
+        ],
+        "motion_reliability_score": 0.0,
+        "reobservation_priority": 0.4697347079115582
+      }
+    ],
+    "scope": "recorded episode only",
+    "status": "matches"
+  }
+]

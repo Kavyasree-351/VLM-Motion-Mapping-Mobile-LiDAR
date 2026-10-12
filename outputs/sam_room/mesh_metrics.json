@@ -1,0 +1,10 @@
+{
+  "vertices": 128254,
+  "triangles": 247387,
+  "cutaway_triangles": 128152,
+  "tsdf_voxel_pose_units": 0.025,
+  "tsdf_truncation_pose_units": 0.1,
+  "dense_pixel_support_gate": 0.11,
+  "object_surface_points": 15723,
+  "render": "Actual fused vertex RGB; interactive full-room/cutaway/object layers. No generative replacement or synthetic geometry completion."
+}

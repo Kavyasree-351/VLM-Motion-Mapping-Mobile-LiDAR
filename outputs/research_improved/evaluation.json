@@ -1,0 +1,122 @@
+{
+  "depth_holdout": [
+    {
+      "method": "original_framewise_pseudo_depth",
+      "samples": 2052,
+      "valid_fraction": 1.0,
+      "median_abs_relative_error": 0.31528139613957173,
+      "mean_abs_relative_error": 0.3231641576638692,
+      "rmse_pose_units": 0.830095191602898,
+      "fraction_within_10_percent": 0.21003898635477583
+    },
+    {
+      "samples": 2052,
+      "valid_fraction": 1.0,
+      "median_abs_relative_error": 0.15230362507487583,
+      "mean_abs_relative_error": 0.1713161530012121,
+      "rmse_pose_units": 0.4341077746151839,
+      "fraction_within_10_percent": 0.31773879142300193,
+      "method": "single_global_affine_depth"
+    },
+    {
+      "samples": 2052,
+      "valid_fraction": 1.0,
+      "median_abs_relative_error": 0.03760139582749589,
+      "mean_abs_relative_error": 0.08620253206711483,
+      "rmse_pose_units": 0.3017775333617415,
+      "fraction_within_10_percent": 0.8084795321637427,
+      "method": "temporally_regularized_affine_depth"
+    },
+    {
+      "samples": 2052,
+      "valid_fraction": 1.0,
+      "median_abs_relative_error": 0.042188053492589646,
+      "mean_abs_relative_error": 0.08071616830560226,
+      "rmse_pose_units": 0.2582536979483322,
+      "fraction_within_10_percent": 0.8026315789473685,
+      "method": "temporally_regularized_inverse_depth"
+    }
+  ],
+  "chosen_family": "temporally_regularized_affine_depth",
+  "family_training_scores": [
+    0.029932697800068013,
+    0.0313792678172429
+  ],
+  "training_samples_after_duplicate_exclusion": 7852,
+  "holdout_samples": 2052,
+  "geometry_holdout": {
+    "original": {
+      "heldout_matches": 2190,
+      "median_epipolar_error_half_resolution_px": 20.806560092879785,
+      "p90_epipolar_error_half_resolution_px": 61.00840052848309
+    },
+    "axis_fix_only": {
+      "heldout_matches": 2190,
+      "median_epipolar_error_half_resolution_px": 1.0368348114879333,
+      "p90_epipolar_error_half_resolution_px": 4.143863944633744
+    },
+    "axis_and_focal_fix": {
+      "heldout_matches": 2190,
+      "median_epipolar_error_half_resolution_px": 0.2976972105246918,
+      "p90_epipolar_error_half_resolution_px": 1.7191854237582695
+    }
+  },
+  "split": "every fifth 40-frame anchor pair held out; same rounded image keypoints excluded from training; fixed regularization; model family selected on training only",
+  "caveat": "Correspondence-derived consistency proxies, not external ground-truth accuracy; same sequence used, not cross-scene generalization.",
+  "unfiltered_correspondence_fusion_holdout": {
+    "original": {
+      "samples": 2183,
+      "median_cross_view_3d_disagreement_pose_units": 0.40338272636555034,
+      "p90_disagreement_pose_units": 1.0479598872702007,
+      "pair_cluster_bootstrap_95_interval": [
+        0.29298199518066564,
+        0.6793399581853629
+      ]
+    },
+    "axis_and_focal_fix_only": {
+      "samples": 2183,
+      "median_cross_view_3d_disagreement_pose_units": 0.12129050206867038,
+      "p90_disagreement_pose_units": 0.4352235083565468,
+      "pair_cluster_bootstrap_95_interval": [
+        0.09179281718734991,
+        0.1768105721116232
+      ]
+    },
+    "geometry_and_depth_calibrated": {
+      "samples": 2183,
+      "median_cross_view_3d_disagreement_pose_units": 0.07875614316757883,
+      "p90_disagreement_pose_units": 0.9602309330243939,
+      "pair_cluster_bootstrap_95_interval": [
+        0.052487590577381,
+        0.13406112423469188
+      ]
+    }
+  },
+  "temporal_block_depth_holdout": {
+    "samples": 2410,
+    "valid_fraction": 1.0,
+    "median_abs_relative_error": 0.035642929372224304,
+    "mean_abs_relative_error": 0.0675860346842215,
+    "rmse_pose_units": 0.2114150713655537,
+    "fraction_within_10_percent": 0.8464730290456431,
+    "note": "All depth anchors touching withheld 200-frame blocks removed. Intrinsics fixed from camera experiment; this is a depth calibration robustness test."
+  },
+  "uncertainty_risk_coverage": [
+    {
+      "coverage": 0.25,
+      "mean_abs_relative_error": 0.04525817100036008
+    },
+    {
+      "coverage": 0.5,
+      "mean_abs_relative_error": 0.04244753802309157
+    },
+    {
+      "coverage": 0.75,
+      "mean_abs_relative_error": 0.0448950109468692
+    },
+    {
+      "coverage": 1.0,
+      "mean_abs_relative_error": 0.08620253206711483
+    }
+  ]
+}

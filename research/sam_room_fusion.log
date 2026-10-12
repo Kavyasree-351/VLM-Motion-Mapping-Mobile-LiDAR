@@ -1,0 +1,21 @@
+Supported objects: [('air vent', 128), ('armchair', 1654), ('beanbag', 1381), ('door', 4456), ('picture', 125), ('sofa', 3847), ('storage table', 1125), ('window', 1918), ('window', 1089)]
+{
+  "proposals": 243,
+  "sam_masks": 243,
+  "accepted_refinements": 186,
+  "fallbacks": 57,
+  "objects": 9,
+  "classes": [
+    "air vent",
+    "armchair",
+    "beanbag",
+    "door",
+    "picture",
+    "sofa",
+    "storage table",
+    "window",
+    "window"
+  ],
+  "geometry": "Existing measured mesh and room alignment; object masks refined only",
+  "limitations": "Geometry gates are consistency proxies, not annotated mask accuracy. Same-room visual references and inferred depth scale remain."
+}

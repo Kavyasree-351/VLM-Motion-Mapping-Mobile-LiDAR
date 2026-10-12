@@ -1,0 +1,27 @@
+{
+  "models": [
+    "YOLO11n",
+    "YOLO26m-seg",
+    "YOLOE-26l-seg",
+    "YOLOE-26l-visual"
+  ],
+  "same_frames": [
+    0,
+    300,
+    450,
+    600,
+    750,
+    900,
+    1050,
+    1200,
+    1350,
+    1500,
+    1720,
+    2000
+  ],
+  "image_size": 960,
+  "confidence_threshold": 0.25,
+  "device": "cpu",
+  "comparison": "matched-frame qualitative class/mask audit; no labelled detection test set and no mAP claim",
+  "reference": "https://docs.ultralytics.com/models/yoloe"
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "object_id": "door_0",
+    "class_name": "door",
+    "wall_id": 0,
+    "wall_distance": 0.015154617401533059,
+    "status": "observed_wall_relation_candidate",
+    "opening_verified": false
+  },
+  {
+    "object_id": "picture_0",
+    "class_name": "picture",
+    "wall_id": 1,
+    "wall_distance": 0.00012053309146842911,
+    "status": "observed_wall_relation_candidate",
+    "opening_verified": false
+  },
+  {
+    "object_id": "window_0",
+    "class_name": "window",
+    "wall_id": 2,
+    "wall_distance": 0.1521242051300738,
+    "status": "observed_wall_relation_candidate",
+    "opening_verified": false
+  },
+  {
+    "object_id": "window_1",
+    "class_name": "window",
+    "wall_id": 1,
+    "wall_distance": 0.021981483957593848,
+    "status": "observed_wall_relation_candidate",
+    "opening_verified": false
+  }
+]

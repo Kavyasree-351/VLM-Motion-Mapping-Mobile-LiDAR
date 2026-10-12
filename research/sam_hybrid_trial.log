@@ -1,0 +1,33 @@
+D:\VLM-maps\.venv-sam31\Lib\site-packages\timm\models\layers\__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+2.10.0+cu128 NVIDIA GeForce RTX 4080 Laptop GPU
+hybrid frame 0: 1 accepted masks
+hybrid frame 50: 2 accepted masks
+hybrid frame 85: 3 accepted masks
+hybrid frame 100: 4 accepted masks
+hybrid frame 250: 22 accepted masks
+hybrid frame 380: 40 accepted masks
+hybrid frame 400: 43 accepted masks
+hybrid frame 520: 61 accepted masks
+hybrid frame 540: 64 accepted masks
+hybrid frame 640: 81 accepted masks
+hybrid frame 650: 84 accepted masks
+hybrid frame 750: 103 accepted masks
+hybrid frame 845: 120 accepted masks
+hybrid frame 850: 124 accepted masks
+hybrid frame 935: 140 accepted masks
+hybrid frame 950: 143 accepted masks
+hybrid frame 1100: 161 accepted masks
+hybrid frame 1115: 163 accepted masks
+hybrid frame 1250: 180 accepted masks
+hybrid frame 1265: 184 accepted masks
+hybrid frame 1370: 200 accepted masks
+hybrid frame 1395: 202 accepted masks
+hybrid frame 1400: 204 accepted masks
+hybrid frame 1600: 220 accepted masks
+hybrid frame 1650: 221 accepted masks
+hybrid frame 1655: 223 accepted masks
+hybrid frame 2000: 240 accepted masks
+hybrid frame 2045: 241 accepted masks
+hybrid frame 2050: 242 accepted masks
+hybrid frame 2090: 243 accepted masks

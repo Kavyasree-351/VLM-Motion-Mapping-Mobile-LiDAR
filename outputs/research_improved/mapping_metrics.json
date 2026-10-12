@@ -1,0 +1,12 @@
+{
+  "keyframes": 73,
+  "original_final_keyframes": 419,
+  "before_consistency_points": 891911,
+  "cross_view_supported_points": 758875,
+  "fused_voxels": 158109,
+  "multi_view_supported_voxels": 91884,
+  "runtime_seconds": 5.605075899999974,
+  "voxel_size_pose_units": 0.035,
+  "minimum_independent_keyframe_views": 2,
+  "memory_strategy": "bounded keyframe depth cache and early pixel sampling; sparse calibration; NumPy aggregation; no dense 10M-point float64 concatenation"
+}

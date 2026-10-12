@@ -1,0 +1,15 @@
+D:\VLM-maps\.venv-sam31\Lib\site-packages\timm\models\layers\__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+2.10.0+cu128 NVIDIA GeForce RTX 4080 Laptop GPU
+image 0: 1 regions; total 1.7s
+image 300: 5 regions; total 3.0s
+image 450: 4 regions; total 4.4s
+image 600: 4 regions; total 5.8s
+image 750: 12 regions; total 7.2s
+image 900: 10 regions; total 8.7s
+image 1050: 9 regions; total 10.6s
+image 1200: 12 regions; total 12.6s
+image 1350: 9 regions; total 14.3s
+image 1500: 10 regions; total 16.3s
+image 1720: 5 regions; total 18.0s
+image 2000: 1 regions; total 19.7s

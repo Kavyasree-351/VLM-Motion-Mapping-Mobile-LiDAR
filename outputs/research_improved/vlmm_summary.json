@@ -1,0 +1,12 @@
+{
+  "reference": "https://arxiv.org/abs/2607.16173v2",
+  "adaptation": "CPU DIS flow, eroded box regions, static-background trimmed rigid fit; not paper reproduction",
+  "objects": 3,
+  "states": {
+    "movable_not_observed_moving": 3
+  },
+  "motion_observation_pairs": 33,
+  "sensor_only_pixel_flag_fraction_mean": 0.16631161266154623,
+  "with_export_uncertainty_pixel_flag_fraction_mean": 0.04285880873895955,
+  "limitation": "Real sequence has no annotated moving-object ground truth; flag fractions are diagnostics, not false-positive rates or recall. Noise inflation alone can suppress true motion. Synthetic static and moving tests are separate."
+}

@@ -1,0 +1,722 @@
+[
+  {
+    "frame": 450,
+    "pixel_box": [
+      0,
+      0,
+      280,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 450,
+    "pixel_box": [
+      200,
+      0,
+      520,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 450,
+    "pixel_box": [
+      440,
+      0,
+      720,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 450,
+    "pixel_box": [
+      0,
+      200,
+      280,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 450,
+    "pixel_box": [
+      200,
+      200,
+      520,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 450,
+    "pixel_box": [
+      440,
+      200,
+      720,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 450,
+    "pixel_box": [
+      0,
+      440,
+      280,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 450,
+    "pixel_box": [
+      200,
+      440,
+      520,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 450,
+    "pixel_box": [
+      440,
+      440,
+      720,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 450,
+    "pixel_box": [
+      0,
+      680,
+      280,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 450,
+    "pixel_box": [
+      200,
+      680,
+      520,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 450,
+    "pixel_box": [
+      440,
+      680,
+      720,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 750,
+    "pixel_box": [
+      0,
+      0,
+      280,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 750,
+    "pixel_box": [
+      200,
+      0,
+      520,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 750,
+    "pixel_box": [
+      440,
+      0,
+      720,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 750,
+    "pixel_box": [
+      0,
+      200,
+      280,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 750,
+    "pixel_box": [
+      200,
+      200,
+      520,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 750,
+    "pixel_box": [
+      440,
+      200,
+      720,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 750,
+    "pixel_box": [
+      0,
+      440,
+      280,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 750,
+    "pixel_box": [
+      200,
+      440,
+      520,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 750,
+    "pixel_box": [
+      440,
+      440,
+      720,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 750,
+    "pixel_box": [
+      0,
+      680,
+      280,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 750,
+    "pixel_box": [
+      200,
+      680,
+      520,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 750,
+    "pixel_box": [
+      440,
+      680,
+      720,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1050,
+    "pixel_box": [
+      0,
+      0,
+      280,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1050,
+    "pixel_box": [
+      200,
+      0,
+      520,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1050,
+    "pixel_box": [
+      440,
+      0,
+      720,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1050,
+    "pixel_box": [
+      0,
+      200,
+      280,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1050,
+    "pixel_box": [
+      200,
+      200,
+      520,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1050,
+    "pixel_box": [
+      440,
+      200,
+      720,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1050,
+    "pixel_box": [
+      0,
+      440,
+      280,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1050,
+    "pixel_box": [
+      200,
+      440,
+      520,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1050,
+    "pixel_box": [
+      440,
+      440,
+      720,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1050,
+    "pixel_box": [
+      0,
+      680,
+      280,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1050,
+    "pixel_box": [
+      200,
+      680,
+      520,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1050,
+    "pixel_box": [
+      440,
+      680,
+      720,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1500,
+    "pixel_box": [
+      0,
+      0,
+      280,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1500,
+    "pixel_box": [
+      200,
+      0,
+      520,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1500,
+    "pixel_box": [
+      440,
+      0,
+      720,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1500,
+    "pixel_box": [
+      0,
+      200,
+      280,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1500,
+    "pixel_box": [
+      200,
+      200,
+      520,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1500,
+    "pixel_box": [
+      440,
+      200,
+      720,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1500,
+    "pixel_box": [
+      0,
+      440,
+      280,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1500,
+    "pixel_box": [
+      200,
+      440,
+      520,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1500,
+    "pixel_box": [
+      440,
+      440,
+      720,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1500,
+    "pixel_box": [
+      0,
+      680,
+      280,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1500,
+    "pixel_box": [
+      200,
+      680,
+      520,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1500,
+    "pixel_box": [
+      440,
+      680,
+      720,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1720,
+    "pixel_box": [
+      0,
+      0,
+      280,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1720,
+    "pixel_box": [
+      200,
+      0,
+      520,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1720,
+    "pixel_box": [
+      440,
+      0,
+      720,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1720,
+    "pixel_box": [
+      0,
+      200,
+      280,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1720,
+    "pixel_box": [
+      200,
+      200,
+      520,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1720,
+    "pixel_box": [
+      440,
+      200,
+      720,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1720,
+    "pixel_box": [
+      0,
+      440,
+      280,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1720,
+    "pixel_box": [
+      200,
+      440,
+      520,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1720,
+    "pixel_box": [
+      440,
+      440,
+      720,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1720,
+    "pixel_box": [
+      0,
+      680,
+      280,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1720,
+    "pixel_box": [
+      200,
+      680,
+      520,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 1720,
+    "pixel_box": [
+      440,
+      680,
+      720,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 2000,
+    "pixel_box": [
+      0,
+      0,
+      280,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 2000,
+    "pixel_box": [
+      200,
+      0,
+      520,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 2000,
+    "pixel_box": [
+      440,
+      0,
+      720,
+      280
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 2000,
+    "pixel_box": [
+      0,
+      200,
+      280,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 2000,
+    "pixel_box": [
+      200,
+      200,
+      520,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 2000,
+    "pixel_box": [
+      440,
+      200,
+      720,
+      520
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 2000,
+    "pixel_box": [
+      0,
+      440,
+      280,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 2000,
+    "pixel_box": [
+      200,
+      440,
+      520,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 2000,
+    "pixel_box": [
+      440,
+      440,
+      720,
+      760
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 2000,
+    "pixel_box": [
+      0,
+      680,
+      280,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 2000,
+    "pixel_box": [
+      200,
+      680,
+      520,
+      960
+    ],
+    "type": "image_patch_not_object"
+  },
+  {
+    "frame": 2000,
+    "pixel_box": [
+      440,
+      680,
+      720,
+      960
+    ],
+    "type": "image_patch_not_object"
+  }
+]

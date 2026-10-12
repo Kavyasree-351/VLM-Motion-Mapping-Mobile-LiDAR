@@ -1,0 +1,51 @@
+Camera candidates: [
+  {
+    "mode": "c2w_opengl",
+    "focal_half_resolution": 350.0,
+    "median_epipolar_px": 0.3310302935616077,
+    "positive_depth_fraction": 0.9658658420551856,
+    "samples": 8408,
+    "split": "training anchors only"
+  },
+  {
+    "mode": "c2w_opengl",
+    "focal_half_resolution": 375.0,
+    "median_epipolar_px": 0.9054479090386699,
+    "positive_depth_fraction": 0.8790437678401523,
+    "samples": 8408,
+    "split": "training anchors only"
+  },
+  {
+    "mode": "c2w_opengl",
+    "focal_half_resolution": 300.0,
+    "median_epipolar_px": 1.1855556049963987,
+    "positive_depth_fraction": 0.8903425309229306,
+    "samples": 8408,
+    "split": "training anchors only"
+  },
+  {
+    "mode": "c2w_opengl",
+    "focal_half_resolution": 400.0,
+    "median_epipolar_px": 1.471307224052583,
+    "positive_depth_fraction": 0.7615366317792579,
+    "samples": 8408,
+    "split": "training anchors only"
+  },
+  {
+    "mode": "c2w_opengl",
+    "focal_half_resolution": 250.0,
+    "median_epipolar_px": 2.629660422873706,
+    "positive_depth_fraction": 0.7799714557564225,
+    "samples": 8408,
+    "split": "training anchors only"
+  },
+  {
+    "mode": "c2w_opengl",
+    "focal_half_resolution": 450.0,
+    "median_epipolar_px": 2.556047024471328,
+    "positive_depth_fraction": 0.6933872502378687,
+    "samples": 8408,
+    "split": "training anchors only"
+  }
+]
+Camera selected c2w_opengl focal 343.7862369829403 triangulated samples 10518

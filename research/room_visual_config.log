@@ -1,0 +1,8 @@
+D:\VLM-maps\.packages\torch\jit\_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+Visual prompt armchair frame 1600 embedding torch.Size([1, 1, 512])
+Visual prompt beanbag frame 400 embedding torch.Size([1, 1, 512])
+Visual prompt storage table frame 1000 embedding torch.Size([1, 1, 512])
+Visual prompt door frame 50 embedding torch.Size([1, 1, 512])
+Visual prompt window frame 1600 embedding torch.Size([1, 1, 512])
+Visual prompt picture frame 1000 embedding torch.Size([1, 1, 512])

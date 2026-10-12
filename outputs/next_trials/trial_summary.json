@@ -1,0 +1,29 @@
+{
+  "trial": "geometry-first association and matched box/mask motion",
+  "candidate_tracks": 34,
+  "repeated_tracks": 14,
+  "motion_frames": 34,
+  "actual_masks": 78,
+  "states": {
+    "motion_unknown": 24,
+    "not_observed_moving": 10
+  },
+  "motion_by_region": {
+    "eroded_box": {
+      "observations": 78,
+      "eligible": 68,
+      "median_valid_pixels": 1414.0,
+      "mean_flag_fraction": 0.02604552510655479,
+      "median_score": 0.9811176669218016
+    },
+    "instance_mask": {
+      "observations": 78,
+      "eligible": 62,
+      "median_valid_pixels": 2423.0,
+      "mean_flag_fraction": 0.007089726535854403,
+      "median_score": 0.9179193032500472
+    }
+  },
+  "runtime_seconds": 10.402703299999757,
+  "limits": "Class-agnostic conservative overlap association is not full SuperMap/OVI-MAP reproduction; fixed geometry matching can fragment true moving objects. No identity or motion ground truth. Diagnostic flag fraction is not false-positive rate."
+}

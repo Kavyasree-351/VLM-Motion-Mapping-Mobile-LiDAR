@@ -1,0 +1,74 @@
+{
+  "dataset": "D:\\VLM-maps\\dataset\\content\\vlmaps_dataset\\my_custom_scene",
+  "frames": 2091,
+  "seed": 20261008,
+  "selected_camera_mode": "c2w_opengl",
+  "inferred_intrinsics_half_resolution": [
+    [
+      343.7862369829403,
+      0.0,
+      180.0
+    ],
+    [
+      0.0,
+      343.7862369829403,
+      239.46
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "depth_source": "User reports iPhone LiDAR; exported 0..255 depth encoding is undocumented. Calibration recovered from RGB correspondences and provided poses.",
+  "units": "pose translation units; expected metres for unscaled ARKit export, not independently verified",
+  "total_runtime_seconds": 14.729565300000104,
+  "originals_preserved": true,
+  "novelty": "Research hypothesis only: provenance recovery coupled to independent-view semantic evidence; known ingredients are not claimed as novel.",
+  "versions": {
+    "numpy": "2.5.3",
+    "opencv": "5.0.0",
+    "open3d": "0.20.0"
+  },
+  "vlmm_extension": {
+    "source": "https://arxiv.org/abs/2607.16173v2",
+    "module": "research/motion_map.py",
+    "adaptation": "DIS optical flow and eroded boxes, empirical decoder spread, assumed pose floor; no exact paper benchmark reproduction",
+    "no_motion_ground_truth": true,
+    "no_velocity_timestamps": true
+  },
+  "latest_research_sources": [
+    {
+      "title": "Vision-Language-Motion Maps",
+      "arxiv": "2607.16173v2",
+      "version_date": "2026-08-11",
+      "url": "https://arxiv.org/abs/2607.16173v2",
+      "status": "preprint",
+      "used": "motion schema and corrected endpoint covariance; adapted CPU implementation"
+    },
+    {
+      "title": "Memory for Attention",
+      "arxiv": "2607.23797v2",
+      "version_date": "2026-09-12",
+      "url": "https://arxiv.org/abs/2607.23797v2",
+      "status": "preprint",
+      "used": "reobservation research direction and limitations; no optimal scheduler reproduction"
+    },
+    {
+      "title": "SuperMap",
+      "arxiv": "2608.22896v1",
+      "version_date": "2026-08-24",
+      "url": "https://arxiv.org/abs/2608.22896",
+      "status": "RSS 2026 journal reference on arXiv",
+      "used": "comparison for temporal association and existence; not implemented as full SLAM system"
+    },
+    {
+      "title": "ChronoGraph",
+      "arxiv": "2609.39665v2",
+      "version_date": "2026-10-03",
+      "url": "https://arxiv.org/abs/2609.39665v2",
+      "status": "preprint",
+      "used": "comparison and future interaction-state evaluation; no VLM fine-tuning or action planner reproduction"
+    }
+  ]
+}

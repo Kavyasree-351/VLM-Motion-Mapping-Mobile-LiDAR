@@ -1,0 +1,32 @@
+{
+  "num_rgb_frames": 2091,
+  "num_depth_frames": 2091,
+  "num_poses": 2091,
+  "selected_frames": 210,
+  "frame_step": 10,
+  "depth_raw_percentiles": [
+    12.0,
+    31.0,
+    94.0,
+    146.0,
+    193.0,
+    231.0,
+    245.0
+  ],
+  "depth_max_raw": 255.0,
+  "room_max_meters": 5.0,
+  "depth_scale_raw_units_per_meter": 51.0,
+  "depth_intrinsics": {
+    "fx": 200.0,
+    "fy": 200.0,
+    "cx": 96.0,
+    "cy": 127.712
+  },
+  "voxel_size_m": 0.02,
+  "topdown_resolution_m": 0.02,
+  "pose_format": "tx ty tz qx qy qz qw",
+  "pose_assumption": "camera-to-world",
+  "vertical_axis_assumption": "world Y",
+  "topdown_axes": "world X-Z",
+  "rgb_depth_alignment": "provisional resize only"
+}

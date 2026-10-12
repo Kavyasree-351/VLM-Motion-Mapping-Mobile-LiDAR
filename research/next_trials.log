@@ -1,0 +1,99 @@
+Using cached mask observations
+Tracks 34 repeated 14
+Actual motion masks 1 / 34
+Actual motion masks 2 / 34
+Actual motion masks 3 / 34
+Actual motion masks 4 / 34
+Actual motion masks 5 / 34
+Actual motion masks 6 / 34
+Actual motion masks 7 / 34
+Actual motion masks 8 / 34
+Actual motion masks 9 / 34
+Actual motion masks 10 / 34
+Actual motion masks 11 / 34
+Actual motion masks 12 / 34
+Actual motion masks 13 / 34
+Actual motion masks 14 / 34
+Actual motion masks 15 / 34
+Actual motion masks 16 / 34
+Actual motion masks 17 / 34
+Actual motion masks 18 / 34
+Actual motion masks 19 / 34
+Actual motion masks 20 / 34
+Actual motion masks 21 / 34
+Actual motion masks 22 / 34
+Actual motion masks 23 / 34
+Actual motion masks 24 / 34
+Actual motion masks 25 / 34
+Actual motion masks 26 / 34
+Actual motion masks 27 / 34
+Actual motion masks 28 / 34
+Actual motion masks 29 / 34
+Actual motion masks 30 / 34
+Actual motion masks 31 / 34
+Actual motion masks 32 / 34
+Actual motion masks 33 / 34
+Actual motion masks 34 / 34
+Paired box/mask motion 0
+Paired box/mask motion 100
+Paired box/mask motion 150
+Paired box/mask motion 185
+Paired box/mask motion 235
+Paired box/mask motion 295
+Paired box/mask motion 350
+Paired box/mask motion 425
+Paired box/mask motion 490
+Paired box/mask motion 540
+Paired box/mask motion 585
+Paired box/mask motion 640
+Paired box/mask motion 700
+Paired box/mask motion 750
+Paired box/mask motion 800
+Paired box/mask motion 850
+Paired box/mask motion 885
+Paired box/mask motion 935
+Paired box/mask motion 975
+Paired box/mask motion 1020
+Paired box/mask motion 1100
+Paired box/mask motion 1150
+Paired box/mask motion 1200
+Paired box/mask motion 1250
+Paired box/mask motion 1300
+Paired box/mask motion 1350
+Paired box/mask motion 1400
+Paired box/mask motion 1470
+Paired box/mask motion 1550
+Paired box/mask motion 1655
+Paired box/mask motion 1720
+Paired box/mask motion 1780
+Paired box/mask motion 1945
+Paired box/mask motion 2045
+{
+  "trial": "geometry-first association and matched box/mask motion",
+  "candidate_tracks": 34,
+  "repeated_tracks": 14,
+  "motion_frames": 34,
+  "actual_masks": 78,
+  "states": {
+    "motion_unknown": 24,
+    "not_observed_moving": 10
+  },
+  "motion_by_region": {
+    "eroded_box": {
+      "observations": 78,
+      "eligible": 68,
+      "median_valid_pixels": 1414.0,
+      "mean_flag_fraction": 0.02604552510655479,
+      "median_score": 0.9811176669218016
+    },
+    "instance_mask": {
+      "observations": 78,
+      "eligible": 62,
+      "median_valid_pixels": 2423.0,
+      "mean_flag_fraction": 0.007089726535854403,
+      "median_score": 0.9179193032500472
+    }
+  },
+  "runtime_seconds": 54.16234740000027,
+  "limits": "Class-agnostic conservative overlap association is not full SuperMap/OVI-MAP reproduction; fixed geometry matching can fragment true moving objects. No identity or motion ground truth. Diagnostic flag fraction is not false-positive rate."
+}
