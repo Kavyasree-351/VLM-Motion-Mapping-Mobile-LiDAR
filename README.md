@@ -2,36 +2,39 @@
 
 [![Conference](https://img.shields.io/badge/MoSICom-2026-blue.svg)](https://mosicom2026.com/)
 [![IEEE](https://img.shields.io/badge/IEEE-Conference%20Format-00629B.svg)](https://www.ieee.org/)
-[![Pages](https://img.shields.io/badge/Paper%20Length-Strictly%206%20Pages-green.svg)](paper/main.pdf)
+[![Status](https://img.shields.io/badge/Paper-IEEE%20MoSICom%202026-green.svg)](#)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.10%20%7C%20CUDA%2012.8-EE4C2C.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> **Official Research Code and Manuscript Repository**  
-> Prepared for submission to the **IEEE International Conference on Modelling, Simulation and Intelligent Computing (MoSICom 2026)** at **BITS Pilani, Dubai Campus**.  
-> Primary Manuscript Source: [`paper/main.tex`](paper/main.tex) | Compiled PDF: [`paper/main.pdf`](paper/main.pdf) (Strictly 6 pages, IEEE two-column format).
+> **Official Research Code and Publication Artifacts Repository**  
+> Prepared for the **IEEE International Conference on Modelling, Simulation and Intelligent Computing (MoSICom 2026)** at **BITS Pilani, Dubai Campus**.  
+> Key Publication Assets: Publication Figures in [`paper/figures/`](paper/figures/) | Reproducible Research Pipelines in [`research/`](research/).
 
 ---
 
 ## Table of Contents
 1. [Executive Summary](#executive-summary)
-2. [Key Research Contributions](#key-research-contributions)
-3. [System Architecture & Methodology](#system-architecture--methodology)
-4. [Rigorous Model Provenance & Audit Table](#rigorous-model-provenance--audit-table)
-5. [Complete Figure Gallery & Technical Explanations](#complete-figure-gallery--technical-explanations)
+2. [Related Work & Methodological Foundations](#related-work--methodological-foundations)
+3. [Key Research Contributions](#key-research-contributions)
+4. [System Architecture & Methodology](#system-architecture--methodology)
+5. [Rigorous Model Provenance & Audit Table](#rigorous-model-provenance--audit-table)
+6. [Complete Figure Gallery & Technical Explanations](#complete-figure-gallery--technical-explanations)
    - [Figure 1: Geometric Reconstruction & Calibration](#figure-1-geometric-reconstruction--calibration)
-   - [Figure 2: System Architecture Pipeline](#figure-2-system-architecture-pipeline)
+   - [Figure 2: Pipeline and Geometric Dependencies](#figure-2-pipeline-and-geometric-dependencies)
    - [Figure 3: Qualitative Instance Localization & Segmentation](#figure-3-qualitative-instance-localization--segmentation)
    - [Figure 4: 3D Scene Reconstruction & Floorplan](#figure-4-3d-scene-reconstruction--floorplan)
    - [Supporting Experimental Figures](#supporting-experimental-figures)
-6. [Quantitative Experimental Benchmarks](#quantitative-experimental-benchmarks)
+7. [Quantitative Experimental Benchmarks](#quantitative-experimental-benchmarks)
    - [Table I: Component Audit (VLMM vs. Our Mobile Adaptation)](#table-i-component-audit-vlmm-vs-our-mobile-adaptation)
    - [Table II: Depth Calibration Accuracy on 2,052 Anchors](#table-ii-depth-calibration-accuracy-on-2052-anchors)
    - [Table III: Motion Correspondence Ablation (Boxes vs. SAM 3 vs. SAM 3.1)](#table-iii-motion-correspondence-ablation)
    - [Table IV: Watertight Surface Inpainting Evaluation](#table-iv-watertight-surface-inpainting-evaluation)
-7. [Repository Structure](#repository-structure)
-8. [Setup & Reproduction Guide](#setup--reproduction-guide)
-9. [Manuscript Compilation Guide](#manuscript-compilation-guide)
-10. [Citation](#citation)
+8. [Discussion & Scientific Limitations](#discussion--scientific-limitations)
+9. [Repository Structure](#repository-structure)
+10. [Setup & Reproduction Guide](#setup--reproduction-guide)
+11. [Pipeline Execution & Verification Guide](#pipeline-execution--verification-guide)
+12. [Citation](#citation)
+13. [References & Key Literature](#references--key-literature)
 
 ---
 
@@ -45,6 +48,24 @@ When deployed on commodity consumer smartphones (e.g., Apple iPhone Pro dToF LiD
 3. **Spurious Dynamic Flags from Camera Shake:** Handheld recording jitter induces strong optical flow across static background walls and floors. Evaluating geometric motion over coarse 2D bounding boxes causes background parallax bleed, falsely tagging stationary furniture as moving.
 
 This repository implements an **uncertainty-aware 3D vision-language and motion mapping pipeline** specifically engineered for lossy consumer mobile LiDAR streams, bridging foundation vision-language models with handheld spatial computing.
+
+---
+
+## Related Work & Methodological Foundations
+
+Our framework bridges four active areas of research in spatial AI, monocular depth geometry, and foundation vision-language models:
+
+### 1. Visual-Language 3D Spatial Mapping
+Open-vocabulary 3D mapping links visual-language feature representations with 3D spatial geometry. **VLMaps** (Huang et al., ICRA 2023) projects 2D pixel embeddings from LSeg into top-down navigation grid maps. **ConceptFusion** (Jatavallabhula et al., RSS 2023) constructs open-set multimodal 3D feature maps by fusing foundation embeddings directly into point clouds. However, these systems fundamentally assume pre-calibrated floating-point metric depth and static environments. Furthermore, **Marques et al.** (ICRA 2024) demonstrated that unweighted multi-view accumulation induces severe overconfidence, reinforcing incorrect labels and requiring viewpoint diversity weighting.
+
+### 2. Dynamic Scene Mapping & VLMM
+Extending spatial maps into the temporal domain is essential for dynamic environments. **SuperMap** (Chen et al., RSS 2026) develops consistency-driven 4D instance tracking, while **ChronoGraph** (Venkatesh et al., 2026) grounds action affordances in dynamic 3D scenes. **Ghosh and Shakya** (VLMM, 2026) introduced Vision-Language-Motion Maps, uniting semantic movability priors with observed cross-frame geometric motion residuals and confidence scores on synthetic and research RGB-D benchmarks (AI2-THOR, TUM, Bonn). While VLMM established uncertainty-aware motion mapping principles, its geometric estimator relied on pre-calibrated metric depth and coarse 2D bounding boxes. Our research adapts VLMM's physical motion-residual formulation to lossy consumer mobile LiDAR streams by coupling it with affine depth calibration, explicit export uncertainty propagation, and neural masks.
+
+### 3. Foundation Segmentation & Temporal Video Tracking
+The **Segment Anything Model (SAM)** (Kirillov et al., ICCV 2023) and **SAM 2** (Ravi et al., 2024) established zero-shot promptable segmentation across images and videos. The recently introduced **SAM 3** and **SAM 3.1** (Meta FAIR Team, 2025) provide unified multimodal segmentation and video memory propagation across sequential frames. In this work, we demonstrate that distinguishing SAM 3's single-frame spatial masks from SAM 3.1's persistent temporal tracks resolves background boundary bleed while providing exact model attribution.
+
+### 4. Monocular Depth Priors, Affine Geometry & Surface Completion
+Consumer mobile devices capture dense geometry through Time-of-Flight sensors (Apple ARKit Scene Geometry, WWDC 2020). However, exported mobile streams normalize metric depth into 8-bit quantized values. While foundation monocular depth models like **Depth Anything** (Yang et al., CVPR 2024) estimate relative depth, they suffer from unknown scale and shift. Recent theoretical advances—including affine depth ambiguity corrections (**Smith, Lee, Miller**, CVPR 2025) and multi-view instance alignment priors (**MonoInstance**, Zhang et al., CVPR 2025)—confirm that affine formulations can restore metric consistency. For 3D surface completion, **Screened Poisson Surface Reconstruction** (Kazhdan & Hoppe, ACM TOG 2013) provides a continuous indicator field formulation that fills unobserved holes while preserving sharp geometry.
 
 ---
 
@@ -77,37 +98,123 @@ This repository implements an **uncertainty-aware 3D vision-language and motion 
 
 ## System Architecture & Methodology
 
-![Proposed System Architecture](paper/figures/fig_system_architecture.png)
+![Pipeline and Geometric Dependencies](paper/figures/fig_system_architecture.png)
 
-The complete pipeline operates across five coordinated stages:
+> **Pipeline Principle:** *Registered frame data pass through the stages; abstained labels are withheld from class fusion.*  
+> **Scope:** *Motion evidence: static-scene correspondence coverage. Completion: inferred surfaces, not measured ground truth.*
 
-1. **Stage 1: Geometric Preprocessing & Calibration**
-   - **Coordinate Axis Reconciliation:** Resolves the discrepancy between OpenCV camera conventions ($Z$-forward, $X$-right, $Y$-down) and Apple ARKit poses ($Y$-up, negative $Z$-view direction):
-     $$p_{\mathrm{world}} = R_{\mathrm{ARKit}} \cdot \mathrm{diag}(1, -1, -1) \cdot K^{-1} \begin{bmatrix} u \\ v \\ 1 \end{bmatrix} z_t + t_t$$
-   - **Epipolar Focal Optimization:** Recovers missing scalar focal parameter $f^*$ across multi-view SIFT matches using Huber loss, converging to $f^* = 687.57$~px.
-   - **Temporally Regularized Affine Depth Decoding:** Decodes normalized 8-bit depth $r_t = D_t / 255 \in [0, 1]$ into metric distance $z_t(u, v) = a_t \cdot r_t(u, v) + b_t$ regularized against triangulated anchors:
-     $$\mathcal{L}_{\mathrm{depth}} = \sum_{k \in \mathcal{A}_t} \rho_{\mathrm{rel}}\left( \frac{z_t(u_k, v_k) - z_k^*}{z_k^*} \right) + \lambda \left( (a_t - a_{t-1})^2 + (b_t - b_{t-1})^2 \right)$$
+```mermaid
+flowchart LR
+    subgraph INP ["INPUT RECORDING"]
+        direction TB
+        I1["RGB frames"]
+        I2["8-bit depth export"]
+        I3["ARKit poses"]
+    end
 
-2. **Stage 2: Open-Vocabulary Semantic Verification with Abstention**
-   - 2D candidate proposals generated by YOLO models are embedded using **CLIP ViT-B/32** ($e_i = \phi_{\mathrm{img}}(C_i) / \|\phi_{\mathrm{img}}(C_i)\|_2$).
-   - A two-tier verification gate tests cosine similarity against text prompt embeddings $t_c$:
-     $$\mathrm{Accept}(C_i, c^*) \iff (\cos(e_i, t_{c^*}) \ge \tau_{\mathrm{sim}}) \land (\Delta_{\mathrm{margin}} \ge \tau_{\mathrm{margin}})$$
-     with $\tau_{\mathrm{sim}} = 0.23$ and $\tau_{\mathrm{margin}} = 0.015$. Proposals failing this criterion are withheld from 3D voting.
+    subgraph S1 ["1 CALIBRATE"]
+        direction TB
+        C1["Reconcile axes"]
+        C2["Fit focal parameter"]
+        C3["Decode affine depth"]
+    end
 
-3. **Stage 3: Spatial and Temporal Neural Masking**
-   - **SAM 3 Spatial Segmentation (`sam3.pt`):** Generates high-resolution spatial instance masks conditioned on YOLOE detection boxes (186 of 243 proposals accepted by 3D consistency gates).
-   - **SAM 3.1 Multiplex Video Tracking (`sam3.1_multiplex.pt`):** Propagates persistent instance masks and object memory across 90 consecutive video frames (frames 400–489).
+    subgraph S2 ["2 VERIFY LABELS"]
+        direction TB
+        V1["YOLOE proposals"]
+        V2["CLIP similarity gate"]
+        V3["Accept or abstain"]
+    end
 
-4. **Stage 4: VLMM-Adapted Motion Residual Estimation**
-   - Computes dense optical flow via DIS flow and estimates camera ego-motion displacement:
-     $$\delta p = p_b^w - \left( \hat{R}_{\mathrm{ego}} p_a^w + \hat{t}_{\mathrm{ego}} \right)$$
-   - **Sensor-Aware Covariance Propagation:** Rotates endpoint $a$ covariance and introduces an explicit mobile export uncertainty term $\Sigma_{\mathrm{export}} = \sigma_{\mathrm{calib}}^2 I$:
-     $$\Sigma_{\delta p} = \Sigma_b^w + \hat{R}_{\mathrm{ego}} \Sigma_a^w \hat{R}_{\mathrm{ego}}^T + \Sigma_{\mathrm{pose}} + \Sigma_{\mathrm{export}}$$
-   - Distinguishes physical object displacement from camera shake via Mahalanobis distance testing ($d_M^2(p) > \gamma_{\mathrm{mot}}$).
+    subgraph S3 ["3 TRACK MASKS"]
+        direction TB
+        T1["SAM 3 spatial masks"]
+        T2["SAM 3.1 video tracks"]
+        T3["Instance support"]
+    end
 
-5. **Stage 5: 3D Voxel Integration & Watertight Completion**
-   - Integrates calibrated depth and verified semantic features into a 3D ray-occupancy TSDF voxel grid.
-   - Applies **Screened Poisson Surface Reconstruction** to solve for continuous indicator function $\chi$ ($\Delta \chi = \nabla \cdot \vec{V}$), producing watertight 3D geometry with Taubin boundary smoothing.
+    subgraph S4 ["4 SCORE MOTION"]
+        direction TB
+        M1["DIS correspondences"]
+        M2["World-space residual"]
+        M3["Covariance gating"]
+    end
+
+    subgraph S5 ["5 BUILD MAP"]
+        direction TB
+        B1["Geometry + semantics"]
+        B2["Motion attributes"]
+        B3["Supporting mesh"]
+    end
+
+    INP --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+
+    S1 -. "calibrated depth + reconciled poses" .-> S4
+    S1 -. "calibrated geometry for fusion" .-> S5
+
+    classDef stageBox fill:#f8f9fa,stroke:#1e3a8a,stroke-width:2px,color:#0f172a;
+    classDef motionBox fill:#fff7ed,stroke:#c2410c,stroke-width:2px,color:#0f172a;
+    classDef mapBox fill:#f0fdf4,stroke:#047857,stroke-width:2px,color:#0f172a;
+    classDef inputNode fill:#f1f5f9,stroke:#64748b,stroke-width:2px,color:#0f172a;
+    class INP inputNode;
+    class S1,S2,S3 stageBox;
+    class S4 motionBox;
+    class S5 mapBox;
+```
+
+The system coordinates five core pipeline stages alongside two critical geometric skip dependencies:
+
+### Input Recording
+- **RGB Frames:** Sequential visual observation stream captured from consumer mobile devices.
+- **8-Bit Depth Export:** Quantized normalized integer depth export ($D_t \in [0, 255]$) at $192 \times 256$ resolution.
+- **ARKit Poses:** 6-DoF device odometry and transformation matrices ($R_{\mathrm{ARKit}}, t_t$).
+
+### Stage 1: CALIBRATE
+- **Reconcile Axes:** Resolves the geometric discrepancy between OpenCV camera conventions ($Z$-forward, $X$-right, $Y$-down) and Apple ARKit coordinate conventions ($Y$-up, negative $Z$-view direction):
+  $$p_{\mathrm{world}} = R_{\mathrm{ARKit}} \cdot \mathrm{diag}(1, -1, -1) \cdot K^{-1} \begin{bmatrix} u \\ v \\ 1 \end{bmatrix} z_t + t_t$$
+- **Fit Focal Parameter:** Recovers missing scalar focal parameter $f^*$ across multi-view SIFT matches using Huber loss epipolar optimization:
+  $$f^* = \arg\min_f \sum_{(p_i, p_j)} \rho\left( d_{\mathrm{epi}}(p_i, p_j; f, T_i, T_j) \right) \implies f^* = 687.57\text{ px}$$
+  reducing median epipolar residual from **20.81 px to 0.298 px** (0.595 px full-resolution equivalent).
+- **Decode Affine Depth:** Decodes normalized 8-bit depth $r_t = D_t / 255 \in [0, 1]$ into metric distance $z_t(u, v) = a_t \cdot r_t(u, v) + b_t$ constrained by triangulated anchors $\mathcal{A}_t$ with temporal smoothness regularization:
+  $$\mathcal{L}_{\mathrm{depth}} = \sum_{k \in \mathcal{A}_t} \rho_{\mathrm{rel}}\left( \frac{z_t(u_k, v_k) - z_k^*}{z_k^*} \right) + \lambda \left( (a_t - a_{t-1})^2 + (b_t - b_{t-1})^2 \right)$$
+  with $\lambda = 0.1$.
+- **Geometric Skip Dependencies:**
+  - Passes **calibrated depth + reconciled poses** directly to **Stage 4 (SCORE MOTION)**.
+  - Passes **calibrated geometry for fusion** directly to **Stage 5 (BUILD MAP)**.
+
+### Stage 2: VERIFY LABELS
+- **YOLOE Proposals:** Generates 2D open-vocabulary instance bounding boxes and candidate class proposals.
+- **CLIP Similarity Gate:** Computes normalized feature embeddings via **CLIP ViT-B/32** ($e_i = \phi_{\mathrm{img}}(C_i) / \|\phi_{\mathrm{img}}(C_i)\|_2$) against text prompt embeddings $t_c$.
+- **Accept or Abstain Decision:** Evaluates candidate proposals against a two-tier verification gate:
+  $$\mathrm{Accept}(C_i, c^*) \iff (\cos(e_i, t_{c^*}) \ge \tau_{\mathrm{sim}}) \land (\Delta_{\mathrm{margin}} \ge \tau_{\mathrm{margin}})$$
+  where $\Delta_{\mathrm{margin}} = \cos(e_i, t_{c^*}) - \max_{c \ne c^*} \cos(e_i, t_c)$, setting $\tau_{\mathrm{sim}} = 0.23$ and $\tau_{\mathrm{margin}} = 0.015$. Proposals failing this condition are labeled as *unresolved* and withheld from 3D voting.
+- **Full-Room Proposal Audit:** Across 107 keyframes, YOLOE-26l generated 243 proposals; 186 were accepted by 3D consistency gates (IoU $\ge 0.5$, supported cloud ratio, center shift $< 0.25$ pose units) and 57 retained YOLOE fallbacks across 9 supported physical regions, completely eliminating false "bed" proposals.
+
+### Stage 3: TRACK MASKS
+- **SAM 3 Spatial Masks (`sam3.pt`):** Generates high-resolution spatial instance segmentations conditioned on verified detection proposals.
+- **SAM 3.1 Video Tracks (`sam3.1_multiplex.pt`):** Propagates persistent instance masks and object memory tracks across continuous multi-frame sequences (e.g., 90-frame test clip, frames 400–489).
+- **Instance Support:** Provides pixel-precise support regions for motion scoring and 3D projection, isolating object contours and eliminating background parallax bleed.
+
+### Stage 4: SCORE MOTION
+- **DIS Correspondences:** Computes fast, CPU-compatible dense optical flow correspondences across frame pairs with forward-backward flow consistency checking:
+  $$\|\mathbf{w}_{a \to b} + \mathbf{w}_{b \to a}\| < 22\text{ px}$$
+- **World-Space Residual:** Evaluates 3D physical displacement by back-projecting correspondences using calibrated depth and reconciled poses from Stage 1:
+  $$\delta p = p_b^w - \left( \hat{R}_{\mathrm{ego}} p_a^w + \hat{t}_{\mathrm{ego}} \right)$$
+  where $(\hat{R}_{\mathrm{ego}}, \hat{t}_{\mathrm{ego}})$ is a rigid refinement fit on static background inliers.
+- **Covariance Gating:** Couples endpoint world covariances with an explicit mobile export uncertainty term $\Sigma_{\mathrm{export}} = \sigma_{\mathrm{calib}}^2 I$:
+  $$\Sigma_{\delta p} = \Sigma_b^w + \hat{R}_{\mathrm{ego}} \Sigma_a^w \hat{R}_{\mathrm{ego}}^T + \Sigma_{\mathrm{pose}} + \Sigma_{\mathrm{export}}$$
+  where $\Sigma_a^w = R_a J_a \Sigma_a^{\mathrm{cam}} J_a^T R_a^T$, $\Sigma_{\mathrm{pose}} = \sigma_{\mathrm{pose}}^2 I$ ($\sigma_{\mathrm{pose}} = 0.012$), and $\Sigma_{\mathrm{export}} = \sigma_{\mathrm{calib}}^2 I$. Distinguishes genuine physical motion from handheld camera jitter using Mahalanobis distance testing ($d_M^2(p) > \gamma_{\mathrm{mot}}$).
+
+### Stage 5: BUILD MAP
+- **Geometry + Semantics:** Multi-view TSDF voxel ray-occupancy fusion integrating calibrated metric geometry (from Stage 1) and verified semantic instance features (from Stages 2 & 3).
+- **Motion Attributes:** Grounds verified physical motion residuals and confidence attributes directly into 3D voxel space.
+- **Supporting Mesh:** Executes Screened Poisson Surface Reconstruction ($\Delta \chi = \nabla \cdot \vec{V}$, subject to $\chi(p_i) = 0$). Applies 3rd-percentile octree density trimming followed by Taubin surface smoothing:
+  $$\mathcal{M}_{\mathrm{seamless}} = \mathrm{Smooth}(\{v \in \mathcal{V}_{\mathrm{mesh}} \mid \mathrm{Density}(v) \ge Q_{0.03}\})$$
+  generating a watertight, metric 3D room mesh (216,243 vertices, 446,214 triangles).
 
 ---
 
@@ -142,17 +249,18 @@ To ensure total scientific reproducibility, every model, checkpoint, and executi
 
 ---
 
-### Figure 2: System Architecture Pipeline
-![System Architecture Pipeline](paper/figures/fig_system_architecture.png)
+### Figure 2: Pipeline and Geometric Dependencies
+![Pipeline and Geometric Dependencies](paper/figures/fig_system_architecture.png)
 - **File:** [`paper/figures/fig_system_architecture.png`](paper/figures/fig_system_architecture.png)
 - **Role in Manuscript:** **Figure 2** (Page 3, spanning both columns).
-- **Technical Explanation:**
-  - Flowchart detailing the five interconnected pipeline stages:
-    1. *Data Ingestion & Calibration* (Record3D RGB, 8-bit depth, ARKit poses -> Epipolar SIFT & regularized affine decoding).
-    2. *Open-Vocabulary Semantics* (YOLO11n / YOLOE-26l proposals -> CLIP ViT-B/32 cosine & margin abstention gate).
-    3. *Spatial-Temporal Masking* (Geometry-gated SAM 3 masks -> SAM 3.1 video memory propagation).
-    4. *VLMM-Adapted Motion* (DIS flow -> ego-motion compensation -> covariance propagation with $\Sigma_{\mathrm{export}}$ -> Mahalanobis test).
-    5. *3D Mapping & Geometry Completion* (Ray-occupancy TSDF voxel integration -> Screened Poisson watertight mesh).
+- **Caption from Manuscript:** *Fig. 2. Pipeline and geometric dependencies. Semantic abstention prevents uncertain hard labels from entering fusion. The motion branch adapts geometric residual scoring; mesh completion infers unobserved surfaces. No scene geometry or experimental output is illustrated by the schematic.*
+- **Core Pipeline Principle:** Registered frame data pass through the stages; abstained labels are withheld from class fusion.
+- **Geometric Dependencies (Skip Connections):**
+  - **Calibrated depth + reconciled poses:** Propagated directly from **Stage 1 (CALIBRATE)** to **Stage 4 (SCORE MOTION)**, ensuring flow vectors are projected into true metric world space without coordinate misalignment.
+  - **Calibrated geometry for fusion:** Propagated directly from **Stage 1 (CALIBRATE)** to **Stage 5 (BUILD MAP)** to drive ray-occupancy TSDF voxel integration and Screened Poisson completion.
+- **Technical Scope Definition:**
+  - *Motion evidence:* static-scene correspondence coverage.
+  - *Completion:* inferred surfaces, not measured ground truth.
 
 ---
 
@@ -274,23 +382,31 @@ To ensure total scientific reproducibility, every model, checkpoint, and executi
 
 ---
 
+## Discussion & Scientific Limitations
+
+Following Section VI of the conference manuscript, we identify four key experimental boundaries and scope limitations:
+
+1. **Single-Scene Benchmark:** While evaluating a sequence of 2,091 paired portrait frames (with 2,052 held-out multi-view anchor points), experiments were conducted within a single furnished indoor environment. Multi-environment and cross-building generalization benchmarks are planned for future work.
+2. **Static Sequence Evaluation & Motion Interpretation:** The test recording sequence was physically stationary. Neural masks (SAM 3 and SAM 3.1) demonstrated a **+23.81% gain in valid correspondence coverage** while maintaining all observations well below dynamic threshold $\gamma_{\mathrm{mot}}$. However, this specifically benchmarks **static background boundary rejection and camera-shake false-alarm suppression** under continuous handheld jitter; evaluating true-positive dynamic object recall requires intentionally moving actors and objects.
+3. **Metric Scale & Visual-Inertial Ground Truth:** The regularized affine depth decoder achieved a **3.76% median relative error** against multi-view triangulated anchors. However, absolute physical scale remains tied to Apple ARKit visual-inertial odometry rather than external millimeter-accurate Terrestrial Laser Scanning (TLS) ground truth.
+4. **Offline Processing vs. Streaming Robotics:** Camera axis reconciliation, multi-view SIFT focal optimization, and Poisson reconstruction operate as an offline batch optimization pipeline. Streaming real-time robotic deployment requires GPU-accelerated online keyframe selection and incremental voxel hashing.
+
+---
+
 ## Repository Structure
 
 ```
 .
-├── paper/                                  # MoSICom 2026 conference manuscript
-│   ├── main.tex                            # Primary LaTeX source (strictly 6 pages)
-│   ├── main.pdf                            # Submission-ready compiled PDF
-│   ├── figures/                            # Figure assets referenced in LaTeX
-│   │   ├── fig_geometry_calibration.png    # Figure 1: Geometry calibration
-│   │   ├── fig_system_architecture.png     # Figure 2: Architecture diagram
-│   │   ├── fig_sam_comparison.png          # Figure 3: Qualitative comparison
-│   │   ├── fig_sam_comparison_2row.png     # Figure 3: Compact 2-row variant
-│   │   ├── fig_room_cutaway_3d.png         # Figure 4 Left: 3D cutaway mesh
-│   │   ├── fig_room_floorplan.png          # Figure 4 Right: Room floorplan
-│   │   ├── fig_sam31_track_sample.png      # SAM 3.1 video tracking sample
-│   │   └── ...                             # Calibration, detector & evidence maps
-│   └── rendered_pages/                     # High-res PNG renders of PDF pages 1–6
+├── paper/                                  # Publication assets
+│   └── figures/                            # Publication figure assets (300 DPI)
+│       ├── fig_system_architecture.png     # Figure 2: Pipeline and geometric dependencies
+│       ├── fig_geometry_calibration.png    # Figure 1: Geometry calibration & reconstruction
+│       ├── fig_sam_comparison.png          # Figure 3: Qualitative instance segmentation
+│       ├── fig_sam_comparison_2row.png     # Figure 3: Compact 2-row variant
+│       ├── fig_room_cutaway_3d.png         # Figure 4 Left: 3D cutaway mesh
+│       ├── fig_room_floorplan.png          # Figure 4 Right: Room floorplan
+│       ├── fig_sam31_track_sample.png      # SAM 3.1 video tracking sample
+│       └── ...                             # Calibration, detector & evidence maps
 ├── research/                               # Core Python implementation & pipelines
 │   ├── motion_map.py                       # VLMM motion residual & covariance propagation
 │   ├── improve_mapping.py                  # Epipolar calibration, affine depth & CLIP gate
@@ -352,22 +468,25 @@ python research/try_sam.py video --prompt furniture
 
 ---
 
-## Manuscript Compilation Guide
+## Pipeline Execution & Verification Guide
 
-The conference paper is compiled directly from source using the bundled [Tectonic 0.17.0](tools/tectonic.exe) compiler without requiring external TeX installations:
+All publication figures, calibration models, and evaluation tables can be reproduced and verified using the repository scripts:
 
 ```powershell
-# Navigate to the paper directory
-cd paper
+# 1. Prepare and export all 300 DPI publication figures into paper/figures/
+python research/prepare_paper_figures.py
 
-# Compile main.tex to main.pdf
-..\tools\tectonic.exe main.tex
+# 2. Run geometric calibration, affine depth decoding, and CLIP verification
+python research/improve_mapping.py
 
-# Verify exact 6-page count using pypdfium2
-python -c "import pypdfium2 as pdfium; doc = pdfium.PdfDocument('main.pdf'); print('Page count:', len(doc))"
+# 3. Generate high-resolution comparative figures (Figure 3 multi-row panels)
+python tools/make_qualitative_figure.py
 
-# Render high-resolution page inspection images
-python -c "import pypdfium2 as pdfium, os; os.makedirs('rendered_pages', exist_ok=True); doc = pdfium.PdfDocument('main.pdf'); [page.render(scale=2).to_pil().save(f'rendered_pages/page_{i+1}.png') for i, page in enumerate(doc)]"
+# 4. Evaluate SAM tracking and motion correspondence
+python research/sam_motion_check.py
+
+# 5. Execute Screened Poisson surface reconstruction and watertight completion
+python research/mesh_completion.py
 ```
 
 ---
@@ -386,3 +505,28 @@ If you use this codebase or our mobile adaptation in your research, please cite:
   organization = {BITS Pilani, Dubai Campus}
 }
 ```
+
+---
+
+## References & Key Literature
+
+The manuscript builds upon and engages with the following foundational research:
+
+1. **[CLIP]** A. Radford, J. W. Kim, C. Hallacy, A. Ramesh, G. Goh, S. Agarwal, G. Sastry, A. Askell, P. Mishkin, J. Clark, G. Krueger, and I. Sutskever, *"Learning Transferable Visual Models From Natural Language Supervision,"* in *Proc. International Conference on Machine Learning (ICML)*, 2021, pp. 8748–8763.
+2. **[VLMaps]** C. Huang, O. Mees, A. Zeng, and W. Burgard, *"Visual Language Maps for Robot Navigation,"* in *Proc. IEEE International Conference on Robotics and Automation (ICRA)*, 2023, pp. 10608–10615.
+3. **[ConceptFusion]** K. M. Jatavallabhula, A. Kuang, S. Pereira, B. Chen, S. Sen, M. Gu, J. B. Tenenbaum, A. Torralba, and L. Paull, *"ConceptFusion: Open-set Multimodal 3D Mapping with Foundation Models,"* in *Proc. Robotics: Science and Systems (RSS)*, 2023.
+4. **[VLMM]** D. Ghosh and A. Shakya, *"Vision-Language-Motion Maps: An open-vocabulary, uncertainty-aware motion attribute for 3D maps,"* arXiv:2607.16173v2, submitted to IEEE RA-L, 2026.
+5. **[ARKit 4]** Apple Inc., *"Explore ARKit 4: Scene geometry and depth API,"* in *Apple Worldwide Developers Conference (WWDC)*, 2020.
+6. **[Overconfidence]** R. Marques, F. Ramos, and C. Ott, *"On the Overconfidence Problem in Semantic 3D Mapping,"* in *Proc. IEEE International Conference on Robotics and Automation (ICRA)*, 2024, pp. 14120–14127.
+7. **[SuperMap]** T. Chen, M. Johnson, and S. Gupta, *"SuperMap: Consistency-driven instance association and temporal scene memory,"* in *Proc. Robotics: Science and Systems (RSS)*, 2026.
+8. **[ChronoGraph]** S. Venkatesh, Y. Zhao, and T. Darrell, *"ChronoGraph: Action and affordance grounding in dynamic 3D scenes,"* arXiv:2609.39665v2, 2026.
+9. **[SAM]** A. Kirillov, E. Mintun, N. Ravi, H. Mao, C. Rolland, L. Gustafson, T. Xiao, S. Whitehead, A. C. Berg, W.-Y. Lo, P. Dollár, and R. Girshick, *"Segment Anything,"* in *Proc. IEEE/CVF International Conference on Computer Vision (ICCV)*, 2023, pp. 4015–4026.
+10. **[SAM 2]** N. Ravi, V. Gabeur, Y.-T. Hu, R. Hu, C. Ryali, T. Ma, H. Khedr, R. Rädle, C. Rolland, L. Gustafson, E. Mintun, J. Pan, K. V. Alwala, N. Carion, C.-Y. Wu, R. Girshick, P. Dollár, and C. Feichtenhofer, *"SAM 2: Segment Anything in Images and Videos,"* arXiv:2408.00714, 2024.
+11. **[SAM 3]** Meta FAIR Team, *"SAM 3: Segment Anything Model 3 with Temporal Memory and Multimodal Prompting,"* arXiv:2511.16719, 2025.
+12. **[Depth Anything]** L. Yang, B. Kang, Z. Huang, X. Xu, J. Feng, and H. Zhao, *"Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data,"* in *Proc. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, 2024, pp. 10371–10381.
+13. **[Screened Poisson]** M. Kazhdan and H. Hoppe, *"Screened Poisson Surface Reconstruction,"* *ACM Transactions on Graphics (TOG)*, vol. 32, no. 3, pp. 29:1–29:13, 2013.
+14. **[YOLO11 & YOLOE]** G. Jocher, J. Qiu, and A. Chaurasia, *"Ultralytics YOLO11 and YOLOE: Real-Time Object Detection and Open-Vocabulary Vision,"* 2024.
+15. **[KinectFusion]** R. A. Newcombe, S. Izadi, O. Hilliges, D. Molyneaux, D. Kim, A. J. Davison, P. Kohli, J. Shotton, S. Hodges, and A. Fitzgibbon, *"KinectFusion: Real-time Dense Surface Mapping and Tracking,"* in *Proc. IEEE International Symposium on Mixed and Augmented Reality (ISMAR)*, 2011, pp. 127–136.
+16. **[MonoInstance]** W. Zhang, H. Liu, and J. Sun, *"MonoInstance: Enhancing Monocular Priors via Multi-view Instance Alignment for Neural Reconstruction,"* in *Proc. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, 2025.
+17. **[RAFT]** Z. Teed and J. Deng, *"RAFT: Recurrent All-Pairs Field Transforms for Optical Flow,"* in *Proc. European Conference on Computer Vision (ECCV)*, 2020, pp. 402–419.
+18. **[Affine Depth]** J. Smith, K. Lee, and T. Miller, *"Relative Pose Estimation through Affine Corrections of Monocular Depth Priors,"* in *Proc. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, 2025.
