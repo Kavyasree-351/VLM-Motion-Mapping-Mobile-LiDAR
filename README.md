@@ -98,10 +98,6 @@ Consumer mobile devices capture dense geometry through Time-of-Flight sensors (A
 
 ## System Architecture & Methodology
 
-![Pipeline and Geometric Dependencies](paper/figures/fig_system_architecture.png)
-
-> **Pipeline Principle:** *Registered frame data pass through the stages; abstained labels are withheld from class fusion.*  
-> **Scope:** *Motion evidence: static-scene correspondence coverage. Completion: inferred surfaces, not measured ground truth.*
 
 ```mermaid
 flowchart LR
@@ -173,49 +169,6 @@ The system coordinates five core pipeline stages alongside two critical geometri
 - **8-Bit Depth Export:** Quantized normalized integer depth export ($D_t \in [0, 255]$) at $192 \times 256$ resolution.
 - **ARKit Poses:** 6-DoF device odometry and transformation matrices ($R_{\mathrm{ARKit}}, t_t$).
 
-### Stage 1: CALIBRATE
-- **Reconcile Axes:** Resolves the geometric discrepancy between OpenCV camera conventions ($Z$-forward, $X$-right, $Y$-down) and Apple ARKit coordinate conventions ($Y$-up, negative $Z$-view direction):
-  $$p_{\mathrm{world}} = R_{\mathrm{ARKit}} \cdot \mathrm{diag}(1, -1, -1) \cdot K^{-1} \begin{bmatrix} u \\ v \\ 1 \end{bmatrix} z_t + t_t$$
-- **Fit Focal Parameter:** Recovers missing scalar focal parameter $f^*$ across multi-view SIFT matches using Huber loss epipolar optimization:
-  $$f^* = \arg\min_f \sum_{(p_i, p_j)} \rho\left( d_{\mathrm{epi}}(p_i, p_j; f, T_i, T_j) \right) \implies f^* = 687.57\text{ px}$$
-  reducing median epipolar residual from **20.81 px to 0.298 px** (0.595 px full-resolution equivalent).
-- **Decode Affine Depth:** Decodes normalized 8-bit depth $r_t = D_t / 255 \in [0, 1]$ into metric distance $z_t(u, v) = a_t \cdot r_t(u, v) + b_t$ constrained by triangulated anchors $\mathcal{A}_t$ with temporal smoothness regularization:
-  $$\mathcal{L}_{\mathrm{depth}} = \sum_{k \in \mathcal{A}_t} \rho_{\mathrm{rel}}\left( \frac{z_t(u_k, v_k) - z_k^*}{z_k^*} \right) + \lambda \left( (a_t - a_{t-1})^2 + (b_t - b_{t-1})^2 \right)$$
-  with $\lambda = 0.1$.
-- **Geometric Skip Dependencies:**
-  - Passes **calibrated depth + reconciled poses** directly to **Stage 4 (SCORE MOTION)**.
-  - Passes **calibrated geometry for fusion** directly to **Stage 5 (BUILD MAP)**.
-
-### Stage 2: VERIFY LABELS
-- **YOLOE Proposals:** Generates 2D open-vocabulary instance bounding boxes and candidate class proposals.
-- **CLIP Similarity Gate:** Computes normalized feature embeddings via **CLIP ViT-B/32** ($e_i = \phi_{\mathrm{img}}(C_i) / \|\phi_{\mathrm{img}}(C_i)\|_2$) against text prompt embeddings $t_c$.
-- **Accept or Abstain Decision:** Evaluates candidate proposals against a two-tier verification gate:
-  $$\mathrm{Accept}(C_i, c^*) \iff (\cos(e_i, t_{c^*}) \ge \tau_{\mathrm{sim}}) \land (\Delta_{\mathrm{margin}} \ge \tau_{\mathrm{margin}})$$
-  where $\Delta_{\mathrm{margin}} = \cos(e_i, t_{c^*}) - \max_{c \ne c^*} \cos(e_i, t_c)$, setting $\tau_{\mathrm{sim}} = 0.23$ and $\tau_{\mathrm{margin}} = 0.015$. Proposals failing this condition are labeled as *unresolved* and withheld from 3D voting.
-- **Full-Room Proposal Audit:** Across 107 keyframes, YOLOE-26l generated 243 proposals; 186 were accepted by 3D consistency gates (IoU $\ge 0.5$, supported cloud ratio, center shift $< 0.25$ pose units) and 57 retained YOLOE fallbacks across 9 supported physical regions, completely eliminating false "bed" proposals.
-
-### Stage 3: TRACK MASKS
-- **SAM 3 Spatial Masks (`sam3.pt`):** Generates high-resolution spatial instance segmentations conditioned on verified detection proposals.
-- **SAM 3.1 Video Tracks (`sam3.1_multiplex.pt`):** Propagates persistent instance masks and object memory tracks across continuous multi-frame sequences (e.g., 90-frame test clip, frames 400–489).
-- **Instance Support:** Provides pixel-precise support regions for motion scoring and 3D projection, isolating object contours and eliminating background parallax bleed.
-
-### Stage 4: SCORE MOTION
-- **DIS Correspondences:** Computes fast, CPU-compatible dense optical flow correspondences across frame pairs with forward-backward flow consistency checking:
-  $$\|\mathbf{w}_{a \to b} + \mathbf{w}_{b \to a}\| < 22\text{ px}$$
-- **World-Space Residual:** Evaluates 3D physical displacement by back-projecting correspondences using calibrated depth and reconciled poses from Stage 1:
-  $$\delta p = p_b^w - \left( \hat{R}_{\mathrm{ego}} p_a^w + \hat{t}_{\mathrm{ego}} \right)$$
-  where $(\hat{R}_{\mathrm{ego}}, \hat{t}_{\mathrm{ego}})$ is a rigid refinement fit on static background inliers.
-- **Covariance Gating:** Couples endpoint world covariances with an explicit mobile export uncertainty term $\Sigma_{\mathrm{export}} = \sigma_{\mathrm{calib}}^2 I$:
-  $$\Sigma_{\delta p} = \Sigma_b^w + \hat{R}_{\mathrm{ego}} \Sigma_a^w \hat{R}_{\mathrm{ego}}^T + \Sigma_{\mathrm{pose}} + \Sigma_{\mathrm{export}}$$
-  where $\Sigma_a^w = R_a J_a \Sigma_a^{\mathrm{cam}} J_a^T R_a^T$, $\Sigma_{\mathrm{pose}} = \sigma_{\mathrm{pose}}^2 I$ ($\sigma_{\mathrm{pose}} = 0.012$), and $\Sigma_{\mathrm{export}} = \sigma_{\mathrm{calib}}^2 I$. Distinguishes genuine physical motion from handheld camera jitter using Mahalanobis distance testing ($d_M^2(p) > \gamma_{\mathrm{mot}}$).
-
-### Stage 5: BUILD MAP
-- **Geometry + Semantics:** Multi-view TSDF voxel ray-occupancy fusion integrating calibrated metric geometry (from Stage 1) and verified semantic instance features (from Stages 2 & 3).
-- **Motion Attributes:** Grounds verified physical motion residuals and confidence attributes directly into 3D voxel space.
-- **Supporting Mesh:** Executes Screened Poisson Surface Reconstruction ($\Delta \chi = \nabla \cdot \vec{V}$, subject to $\chi(p_i) = 0$). Applies 3rd-percentile octree density trimming followed by Taubin surface smoothing:
-  $$\mathcal{M}_{\mathrm{seamless}} = \mathrm{Smooth}(\{v \in \mathcal{V}_{\mathrm{mesh}} \mid \mathrm{Density}(v) \ge Q_{0.03}\})$$
-  generating a watertight, metric 3D room mesh (216,243 vertices, 446,214 triangles).
-
 ---
 
 ## Rigorous Model Provenance & Audit Table
@@ -250,8 +203,6 @@ To ensure total scientific reproducibility, every model, checkpoint, and executi
 ---
 
 ### Figure 2: Pipeline and Geometric Dependencies
-![Pipeline and Geometric Dependencies](paper/figures/fig_system_architecture.png)
-- **File:** [`paper/figures/fig_system_architecture.png`](paper/figures/fig_system_architecture.png)
 - **Role in Manuscript:** **Figure 2** (Page 3, spanning both columns).
 - **Caption from Manuscript:** *Fig. 2. Pipeline and geometric dependencies. Semantic abstention prevents uncertain hard labels from entering fusion. The motion branch adapts geometric residual scoring; mesh completion infers unobserved surfaces. No scene geometry or experimental output is illustrated by the schematic.*
 - **Core Pipeline Principle:** Registered frame data pass through the stages; abstained labels are withheld from class fusion.
