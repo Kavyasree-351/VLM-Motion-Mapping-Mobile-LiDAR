@@ -1,0 +1,6 @@
+
+# Large reconstruction outputs
+outputs/reconstruction_outputs/*.ply
+
+# YOLO model weights
+.models/yolo/*.pt
